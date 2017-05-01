@@ -1,0 +1,343 @@
+a
+{
+	text-decoration: none;
+}
+
+table
+{
+	border-collapse:collapse;
+}
+
+td
+{
+	width: 10px;
+	height: 10px;
+	/*border: 1px solid black;*/
+}
+
+
+#last_cell, #first_cell
+{
+	background-color: green;
+}
+
+#periode_romantique
+{
+	background-color: red;
+	text-align: center;
+}
+
+#compositeurs_francais
+{
+	background-color: rgb(0,35,149);
+	/*background-image: url(../Backgrounds/background-compositeur-francais.png);
+	background-repeat: repeat;*/
+	color: white;
+	text-align: center;
+	padding: 5px 5px;
+	margin: 5px 5px;
+	border-top: 3px solid white;
+	border-bottom: 3px solid white;
+	font-weight: bold;
+	font-size: large;
+}
+
+#compositeurs_italiens
+{
+	background-color: rgb(0,146,70);
+	text-align: center;
+	padding: 5px 5px;
+	margin: 5px 5px;
+	border-top: 3px solid white;
+	border-bottom: 3px solid white;
+	font-weight: bold;
+	font-size: large;
+}
+
+#compositeurs_allemands
+{
+	background-color: rgb(255,206,0);
+	text-align: center;
+	padding: 5px 5px;
+	margin: 5px 5px;
+	border-top: 3px solid white;
+	border-bottom: 3px solid white;
+	font-weight: bold;
+	font-size: large;
+}
+
+#compositeurs_autrichiens
+{
+	background-color: rgb(237,41,57);
+	text-align: center;
+	padding: 5px 5px;
+	margin: 5px 5px;
+	border-top: 3px solid white;
+	border-bottom: 3px solid white;
+	font-weight: bold;
+	font-size: large;
+}
+
+#compositeurs_russes
+{
+	background-color: rgb(0,57,166);
+	color: white;
+	text-align: center;
+	padding: 5px 5px;
+	margin: 5px 5px;
+	border-top: 3px solid white;
+	border-bottom: 3px solid white;
+	font-weight: bold;
+	font-size: large;
+}
+
+#compositeurs_polonais
+{
+	background-color: rgb(220,20,60);
+	text-align: center;
+	padding: 5px 5px;
+	margin: 5px 5px;
+	border-top: 3px solid white;
+	border-bottom: 3px solid white;
+	font-weight: bold;
+	font-size: large;
+}
+
+#compositeurs_hongrois
+{
+	background-color: rgb(67,111,77);
+	text-align: center;
+	padding: 5px 5px;
+	margin: 5px 5px;
+	border-top: 3px solid white;
+	border-bottom: 3px solid white;
+	font-weight: bold;
+	font-size: large;
+}
+
+#compositeurs_anglais
+{
+	background-color: rgb(4,2,156);
+	color: white;
+	text-align: center;
+	padding: 5px 5px;
+	margin: 5px 5px;
+	border-top: 3px solid white;
+	border-bottom: 3px solid white;
+	font-weight: bold;
+	font-size: large;
+}
+
+#compositeurs_tcheques
+{
+	background-color: rgb(17,69,126);
+	color: white;
+	text-align: center;
+	padding: 5px 5px;
+	margin: 5px 5px;
+	border-top: 3px solid white;
+	border-bottom: 3px solid white;
+	font-weight: bold;
+	font-size: large;
+}
+
+#compositeurs_finlandais
+{
+	background-color: rgb(0,53,128);
+	color: white;
+	text-align: center;
+	padding: 5px 5px;
+	margin: 5px 5px;
+	border-top: 3px solid white;
+	border-bottom: 3px solid white;
+	font-weight: bold;
+	font-size: large;
+}
+
+#compositeurs_espagnols
+{
+	background-color: rgb(198,11,30);
+	text-align: center;
+	padding: 5px 5px;
+	margin: 5px 5px;
+	border-top: 3px solid white;
+	border-bottom: 3px solid white;
+	font-weight: bold;
+	font-size: large;
+}
+
+#compositeurs_norvegiens
+{
+	background-color: rgb(239,43,45);
+	text-align: center;
+	padding: 5px 5px;
+	margin: 5px 5px;
+	border-top: 3px solid white;
+	border-bottom: 3px solid white;
+	font-weight: bold;
+	font-size: large;
+}
+
+.nom_compositeur
+{
+	width:170px;
+	min-width: 170px;
+	/*border: 1px solid black;*/
+}
+
+.vivant_inactif
+{
+	background-color: rgb(111,111,111);
+}
+
+.compositeur_francais
+{
+	/*background-color: rgb(0,35,149);*/
+	background-image: url(../Backgrounds/background-compositeur-francais.png);
+	background-repeat: repeat;
+}
+
+.compositeur_francais:hover
+{
+	background-image: url(../Backgrounds/background-compositeur-francais-hover.png);
+	background-repeat: repeat-x;
+	/*background-color: rgba(0,35,149,0.9);
+	-webkit-box-shadow: rgba(255,255,255,1) 0px 5px 15px, inset rgba(255,255,255,0.5) 0px -10px 20px;
+	-khtml-box-shadow: rgba(0,0,0,0.5) 0px 5px 15px, inset rgba(0,0,0,0.5) 0px -10px 20px;
+	-moz-box-shadow: rgba(0,0,0,0.5) 0px 5px 15px, inset rgba(0,0,0,0.5) 0px -10px 20px;
+	-o-box-shadow: rgba(0,0,0,0.5) 0px 5px 15px, inset rgba(0,0,0,0.5) 0px -10px 20px;
+	box-shadow: rgba(0,0,0,0.5) 0px 5px 15px, inset rgba(0,0,0,0.5) 0px -10px 10px;*/
+}
+
+.compositeur_francais:active
+{
+    -webkit-box-shadow: rgba(255,255,255,0.25)/* 0px 1px 0px, inset rgba(255,255,255,0.03) 0px 20px 0px, inset rgba(0,0,0,0.15) 0px -20px 20px, inset rgba(255,255,255,0.05) 0px 20px 20px*/;
+     -khtml-box-shadow: rgba(255,255,255,0.25) 0px 1px 0px, inset rgba(255,255,255,0.03) 0px 20px 0px, inset rgba(0,0,0,0.15) 0px -20px 20px, inset rgba(255,255,255,0.05) 0px 20px 20px;
+       -moz-box-shadow: rgba(255,255,255,0.25) 0px 1px 0px, inset rgba(255,255,255,0.03) 0px 20px 0px, inset rgba(0,0,0,0.15) 0px -20px 20px, inset rgba(255,255,255,0.05) 0px 20px 20px;
+         -o-box-shadow: rgba(255,255,255,0.25) 0px 1px 0px, inset rgba(255,255,255,0.03) 0px 20px 0px, inset rgba(0,0,0,0.15) 0px -20px 20px, inset rgba(255,255,255,0.05) 0px 20px 20px;
+            box-shadow: rgba(255,255,255,0.25) 0px 1px 0px, inset rgba(255,255,255,0.03) 0px 20px 0px, inset rgba(0,0,0,0.15) 0px -20px 20px, inset rgba(255,255,255,0.05) 0px 20px 20px;
+    text-shadow:1px 1px 1px #eee;
+}
+
+.compositeur_italien
+{
+	background-color: rgb(0,146,70);
+}
+
+.compositeur_italien:hover
+{
+	background-color: rgba(0,146,70,0.5);
+}
+
+.compositeur_allemand
+{
+	background-color: rgb(255,206,0);
+}
+
+.compositeur_allemand:hover
+{
+	background-color: rgba(255,206,0,0.5);
+}
+
+.compositeur_autrichien
+{
+	background-color: rgb(237,41,57);
+}
+
+.compositeur_autrichien:hover
+{
+	background-color: rgba(237,41,57,0.5);
+}
+
+.compositeur_russe
+{
+	background-color: rgb(0,57,166);
+}
+
+.compositeur_russe:hover
+{
+	background-color: rgba(0,57,166,0.5);
+}
+
+.compositeur_polonais
+{
+	background-color: rgb(220,20,60);
+}
+
+.compositeur_polonais:hover
+{
+	background-color: rgba(220,20,60,0.5);
+}
+
+.compositeur_hongrois
+{
+	background-color: rgb(67,111,77);
+}
+
+.compositeur_hongrois:hover
+{
+	background-color: rgba(67,111,77,0.5);
+}
+
+.compositeur_anglais
+{
+	background-color: rgb(4,2,156);
+}
+
+.compositeur_anglais:hover
+{
+	background-color: rgba(4,2,156,0.5);
+}
+
+.compositeur_tcheque
+{
+	background-color: rgb(17,69,126);
+}
+
+.compositeur_tcheque
+{
+	background-color: rgb(0,53,128);
+}
+
+.compositeur_tcheque:hover
+{
+	background-color: rgba(0,53,128,0.5);
+}
+
+.compositeur_espagnol
+{
+	background-color: rgb(198,11,30);
+}
+
+.compositeur_espagnol:hover
+{
+	background-color: rgba(198,11,30,0.5);
+}
+
+.compositeur_norvegien
+{
+	background-color: rgb(239,43,45);
+}
+
+.compositeur_norvegien:hover
+{
+	background-color: rgba(239,43,45,0.5);
+}
+
+.cell_button
+{
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+
+.hidden_text
+{
+	display: none;
+}
+
+.cell_button:hover .hidden_text{
+	text-align: center;
+	color: white;
+	display: block;
+}
