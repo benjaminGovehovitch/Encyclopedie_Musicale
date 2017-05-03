@@ -8,6 +8,24 @@
 
 <link rel="stylesheet" href="../CSS/style_homepage.css" />
 
+<script type="text/javascript">
+ 
+function display(masque)
+{  
+    var tr = document.getElementById(masque);
+     
+    if(tr.style.display == 'none')
+    {
+        tr.style.display = 'table-row';
+    }
+    else
+    {
+        tr.style.display = 'none';
+    }
+}
+ 
+</script>
+
 </head>
 
 <body>
@@ -227,7 +245,7 @@
 	</tr>
 	<!--Compositeurs français-->
 	<tr>
-		<td colspan="200" id="compositeurs_francais">Compositeurs francais</td><!--1760 -- 1957-->
+		<td colspan="200">Compositeurs francais</td><!--1760 -- 1957-->
 		<!--<td id="last_cell"></td><!--1958-->
 	</tr>
 	<!--Hector Berlioz-->
@@ -236,10 +254,20 @@
 		<!--<!--<td id="first_cell"></td><!--1759-->
 		<td colspan="43"></td><!--1760 - 1802-->
 		<td colspan="21" class="vivant_inactif"></td><!--1803 - 1823-->
-		<td colspan="44" class="compositeur_francais"><a href="hector_berlioz.html" class="cell_button"><span class="hidden_text">1824 - 1867</span></a></td><!--1824 - 1867-->
+		<td colspan="44" class="compositeur_francais" OnClick="display('masque1'); display('masque2'); return false;"><a href="#" class="cell_button"><!--<a href="hector_berlioz.html" class="cell_button">--><span class="hidden_text">1824 - 1867</span><!--</a>--></a></td><!--1824 - 1867-->
 		<td colspan="2" class="vivant_inactif"></td><!--1868 - 1869-->
 		<td colspan="88"></td><!--1870 - 1957-->
 		<!--<td id="last_cell"></td><!--1958-->
+	</tr>
+	<!--Test display-->	
+	<tr style="display:none;" id="masque1">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="categorie_oeuvres">Test</td>
+	</tr>
+	<!--Test display-->	
+	<tr style="display:none;" id="masque2">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="categorie_oeuvres">Test</td>
 	</tr>
 	<!--Charles Gounod-->	
 	<tr>
@@ -340,7 +368,7 @@
 		<!--<!--<td id="first_cell"></td><!--1759-->
 		<td colspan="115"></td><!--1760 - 1874-->
 		<td colspan="17" class="vivant_inactif"></td><!--1875 - 1891-->
-		<td colspan="41" class="compositeur_francais"><a href="maurice_ravel.html" class="cell_button"></a></td><!--1892 - 1932-->
+		<td colspan="41" class="compositeur_francais"><a href="maurice_ravel.html" class="cell_button"><span class="hidden_text">1892 - 1933</a></td><!--1892 - 1932-->
 		<td colspan="5" class="vivant_inactif"></td><!--1933 - 1937-->
 		<td colspan="20"></td><!--1938 - 1957-->
 		<!--<td id="last_cell"></td><!--1958-->

@@ -5,13 +5,14 @@ a
 
 table
 {
-	border-collapse:collapse;
+	/*border-collapse:collapse;*/
+	border-spacing: 2px 10px;
 }
 
 td
 {
 	width: 10px;
-	height: 10px;
+	height: 22px;
 	/*border: 1px solid black;*/
 }
 
@@ -340,4 +341,16 @@ td
 	text-align: center;
 	color: white;
 	display: block;
+	overflow: hidden;
+}
+
+.categorie_oeuvres
+{
+	font-size: large;
+	font-weight: bold;
+	height: 30px;
+	border: 1px solid blue;
+	margin-top: 100px;
+	padding: 10px;
+	border-spacing: 10px;
 }
