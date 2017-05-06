@@ -254,20 +254,40 @@ function display(masque)
 		<!--<!--<td id="first_cell"></td><!--1759-->
 		<td colspan="43"></td><!--1760 - 1802-->
 		<td colspan="21" class="vivant_inactif"></td><!--1803 - 1823-->
-		<td colspan="44" class="compositeur_francais" OnClick="display('masque1'); display('masque2'); return false;"><a href="#" class="cell_button"><!--<a href="hector_berlioz.html" class="cell_button">--><span class="hidden_text">1824 - 1867</span><!--</a>--></a></td><!--1824 - 1867-->
+		<td colspan="44" class="compositeur_francais" OnClick="display('oeuvres_symphoniques_HB'); display('ouvertures_HB'); return false;"><a href="#" class="cell_button"><!--<a href="hector_berlioz.html" class="cell_button">--><span class="hidden_text">1824 - 1867</span><!--</a>--></a></td><!--1824 - 1867-->
 		<td colspan="2" class="vivant_inactif"></td><!--1868 - 1869-->
 		<td colspan="88"></td><!--1870 - 1957-->
 		<!--<td id="last_cell"></td><!--1958-->
 	</tr>
-	<!--Test display-->	
-	<tr style="display:none;" id="masque1">
+	<!--Oeuvres symphoniques d'Hector Berlioz-->
+	<tr style="display:none;" id="oeuvres_symphoniques_HB">
 		<td class="nom_compositeur"></td>
-		<td colspan="199" class="categorie_oeuvres">Test</td>
+		<td colspan="199" class="categorie_oeuvres" OnClick="display('symphonie_fantastique_HB'); display('lelio_HB'); return false;"><a href="#">Oeuvres symphoniques</a></td>
 	</tr>
-	<!--Test display-->	
-	<tr style="display:none;" id="masque2">
+	<!--Symphonie fantastique-->
+	<tr style="display:none;" id="symphonie_fantastique_HB">
 		<td class="nom_compositeur"></td>
-		<td colspan="199" class="categorie_oeuvres">Test</td>
+		<td colspan="199" class="nom_oeuvre" OnClick="display('player_symphonie_fantastique_HB'); return false;"><a href="#">Symphonie fantastique</a></td>
+	</tr>
+	<!--Lecteur de la symphonie fantastique-->
+	<tr style="display:none;" id="player_symphonie_fantastique_HB">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="Hector_Berlioz/symphonie_fantastique.html"></object></td>
+	</tr>
+	<!--Lélio ou le retour à la vie-->
+	<tr style="display:none;" id="lelio_HB">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="nom_oeuvre" OnClick="display('player_lelio_HB'); return false;"><a href="#">Lélio ou le retour à la vie</a></td>
+	</tr>
+	<!--Lecteur de Lélio ou le retour à la vie-->
+	<tr style="display:none;" id="player_lelio_HB">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="Hector_Berlioz/lelio_ou_le_retour_a_la_vie.html"></object></td>
+	</tr>
+	<!--Ouvertures d'Hector Berlioz-->
+	<tr style="display:none;" id="ouvertures_HB">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="categorie_oeuvres"><a href="under_construction.html">Ouvertures</a></td>
 	</tr>
 	<!--Charles Gounod-->	
 	<tr>
