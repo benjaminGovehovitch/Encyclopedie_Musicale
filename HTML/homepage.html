@@ -435,9 +435,54 @@ function display(masque)
 		<!--<!--<td id="first_cell"></td><!--1759-->
 		<td colspan="78"></td><!--1760 - 1837-->
 		<td colspan="16" class="vivant_inactif"></td><!--1838 - 1853-->
-		<td colspan="22" class="compositeur_francais"><a href="under_construction.html" class="cell_button"><span class="hidden_text">1854 - 1875</span></a></td><!--1854 - 1875-->
+		<td colspan="22" class="compositeur_francais" OnClick="display('oeuvres_symphoniques_GB'); display('oeuvres_pour_orchestre_GB'); display('operas_GB'); return false"><a href="" class="cell_button"><span class="hidden_text">1854 - 1875</span></a></td><!--1854 - 1875-->
 		<td colspan="82"></td><!--1876 - 1957-->
 		<!--<td id="last_cell"></td><!--1958-->
+	</tr>
+	<!--Oeuvres symphoniques de Georges Bizet-->
+	<tr style="display:none;" id="oeuvres_symphoniques_GB">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="categorie_oeuvres" OnClick="display('symphonie_No_1_GB'); return false;"><a href="#">Oeuvres symphoniques</a></td>
+	</tr>
+	<!--Symphonie No 1-->
+	<tr style="display:none;" id="symphonie_No_1_GB">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="nom_oeuvre" OnClick="display('player_symphonie_No_1_GB'); return false;"><a href="#">Symphonie N°1 en ut majeur</a></td>
+	</tr>
+	<!--Lecteur de la symphonie No 1-->
+	<tr style="display:none;" id="player_symphonie_No_1_GB">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="Georges_Bizet/symphonie_No_1.html"></object></td>
+	</tr>
+	<!--Oeuvres pour orchestre de Georges Bizet-->
+	<tr style="display:none;" id="oeuvres_pour_orchestre_GB">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="categorie_oeuvres" OnClick="display('arlesienne_GB'); return false;"><a href="#">Oeuvres pour orchestre</a></td>
+	</tr>
+	<!--L'arlésienne-->
+	<tr style="display:none;" id="arlesienne_GB">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="nom_oeuvre" OnClick="display('player_arlesienne_GB'); return false;"><a href="#">L'arlésienne</a></td>
+	</tr>
+	<!--Lecteur de l'arlésienne-->
+	<tr style="display:none;" id="player_arlesienne_GB">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="Georges_Bizet/arlesienne.html"></object></td>
+	</tr>
+	<!--Opéras de Georges Bizet-->
+	<tr style="display:none;" id="operas_GB">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="categorie_oeuvres" OnClick="display('carmen_GB'); return false;"><a href="#">Opéras</a></td>
+	</tr>
+	<!--Carmen-->
+	<tr style="display:none;" id="carmen_GB">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="nom_oeuvre" OnClick="display('player_carmen_GB'); return false;"><a href="#">Carmen</a></td>
+	</tr>
+	<!--Lecteur de Carmen-->
+	<tr style="display:none;" id="player_carmen_GB">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="Georges_Bizet/carmen.html"></object></td>
 	</tr>
 	<!--Jules Massenet-->
 	<tr>
