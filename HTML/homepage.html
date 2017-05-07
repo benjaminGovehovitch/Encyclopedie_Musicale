@@ -254,7 +254,7 @@ function display(masque)
 		<!--<!--<td id="first_cell"></td><!--1759-->
 		<td colspan="43"></td><!--1760 - 1802-->
 		<td colspan="21" class="vivant_inactif"></td><!--1803 - 1823-->
-		<td colspan="44" class="compositeur_francais" OnClick="display('oeuvres_symphoniques_HB'); display('ouvertures_HB'); return false;"><a href="#" class="cell_button"><!--<a href="hector_berlioz.html" class="cell_button">--><span class="hidden_text">1824 - 1867</span><!--</a>--></a></td><!--1824 - 1867-->
+		<td colspan="44" class="compositeur_francais" OnClick="display('oeuvres_symphoniques_HB'); display('ouvertures_HB'); display('operas_HB'); return false;"><a href="#" class="cell_button"><!--<a href="hector_berlioz.html" class="cell_button">--><span class="hidden_text">1824 - 1867</span><!--</a>--></a></td><!--1824 - 1867-->
 		<td colspan="2" class="vivant_inactif"></td><!--1868 - 1869-->
 		<td colspan="88"></td><!--1870 - 1957-->
 		<!--<td id="last_cell"></td><!--1958-->
@@ -262,12 +262,12 @@ function display(masque)
 	<!--Oeuvres symphoniques d'Hector Berlioz-->
 	<tr style="display:none;" id="oeuvres_symphoniques_HB">
 		<td class="nom_compositeur"></td>
-		<td colspan="199" class="categorie_oeuvres" OnClick="display('symphonie_fantastique_HB'); display('lelio_HB'); return false;"><a href="#">Oeuvres symphoniques</a></td>
+		<td colspan="199" class="categorie_oeuvres" OnClick="display('symphonie_fantastique_HB'); display('lelio_HB'); display('harold_en_italie_HB'); display('romeo_et_juliette_HB'); display('grande_symphonie_HB'); return false;"><a href="#">Oeuvres symphoniques</a></td>
 	</tr>
 	<!--Symphonie fantastique-->
 	<tr style="display:none;" id="symphonie_fantastique_HB">
 		<td class="nom_compositeur"></td>
-		<td colspan="199" class="nom_oeuvre" OnClick="display('player_symphonie_fantastique_HB'); return false;"><a href="#">Symphonie fantastique</a></td>
+		<td colspan="199" class="nom_oeuvre" OnClick="display('player_symphonie_fantastique_HB'); return false;"><a href="#">Symphonie fantastique Op. 14 (1830)</a></td>
 	</tr>
 	<!--Lecteur de la symphonie fantastique-->
 	<tr style="display:none;" id="player_symphonie_fantastique_HB">
@@ -277,17 +277,67 @@ function display(masque)
 	<!--Lélio ou le retour à la vie-->
 	<tr style="display:none;" id="lelio_HB">
 		<td class="nom_compositeur"></td>
-		<td colspan="199" class="nom_oeuvre" OnClick="display('player_lelio_HB'); return false;"><a href="#">Lélio ou le retour à la vie</a></td>
+		<td colspan="199" class="nom_oeuvre" OnClick="display('player_lelio_HB'); return false;"><a href="#">Lélio ou le retour à la vie Op. 14b (1832)</a></td>
 	</tr>
 	<!--Lecteur de Lélio ou le retour à la vie-->
 	<tr style="display:none;" id="player_lelio_HB">
 		<td class="nom_compositeur"></td>
 		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="Hector_Berlioz/lelio_ou_le_retour_a_la_vie.html"></object></td>
 	</tr>
+	<!--Harold en Italie-->
+	<tr style="display:none;" id="harold_en_italie_HB">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="nom_oeuvre" OnClick="display('player_harold_en_italie_HB'); return false;"><a href="#">Harold en Italie Op. 16 (1834)</a></td>
+	</tr>
+	<!--Lecteur d'Harold en Italie-->
+	<tr style="display:none;" id="player_harold_en_italie_HB">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="Hector_Berlioz/harold_en_italie.html"></object></td>
+	</tr>
+	<!--Roméo et Juliette-->
+	<tr style="display:none;" id="romeo_et_juliette_HB">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="nom_oeuvre" OnClick="display('player_romeo_et_juliette_HB'); return false;"><a href="#">Roméo et Juliette, Symphonie dramatique Op. 17 (1839)</a></td>
+	</tr>
+	<!--Lecteur de Roméo et Juliette-->
+	<tr style="display:none;" id="player_romeo_et_juliette_HB">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="Hector_Berlioz/romeo_et_juliette.html"></object></td>
+	</tr>
+	<!--Grande symphonie funèbre et triomphale-->
+	<tr style="display:none;" id="grande_symphonie_HB">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="nom_oeuvre" OnClick="display('player_grande_symphonie_HB'); return false;"><a href="#">Grande symphonie funèbre et triomphale Op. 15 (1840)</a></td>
+	</tr>
+	<!--Lecteur de la grande symphonie funèbre et triomphale-->
+	<tr style="display:none;" id="player_grande_symphonie_HB">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="Hector_Berlioz/grande_symphonie.html"></object></td>
+	</tr>
 	<!--Ouvertures d'Hector Berlioz-->
 	<tr style="display:none;" id="ouvertures_HB">
 		<td class="nom_compositeur"></td>
-		<td colspan="199" class="categorie_oeuvres"><a href="under_construction.html">Ouvertures</a></td>
+		<td colspan="199" class="categorie_oeuvres" OnClick="display('player_ouvertures_HB'); return false;"><a href="">Ouvertures</a></td>
+	</tr>
+	<!--Lecteur des ouvertures d'Hector Berlioz-->
+	<tr style="display:none;" id="player_ouvertures_HB">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="player_ouvertures"><object type="text/html" data="Hector_Berlioz/ouvertures.html"></object></td>
+	</tr>
+	<!--Opéras d'Hector Berlioz-->
+	<tr style="display:none;" id="operas_HB">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="categorie_oeuvres" OnClick="display('benvenuto_cellini_HB'); return false;"><a href="">Opéras</a></td>
+	</tr>
+	<!--Benvenuto Cellini-->
+	<tr style="display:none;" id="benvenuto_cellini_HB">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="nom_oeuvre" OnClick="display('player_benvenuto_cellini_HB'); return false;"><a href="#">Benvenuto Cellini (1837)</a></td>
+	</tr>
+	<!--Lecteur de Benvenuto Cellini-->
+	<tr style="display:none;" id="player_benvenuto_cellini_HB">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="Hector_Berlioz/benvenuto_cellini.html"></object></td>
 	</tr>
 	<!--Charles Gounod-->	
 	<tr>
@@ -315,9 +365,14 @@ function display(masque)
 		<!--<!--<td id="first_cell"></td><!--1759-->
 		<td colspan="62"></td><!--1760 - 1821-->
 		<td colspan="13" class="vivant_inactif"></td><!--1822 - 1834-->
-		<td colspan="56" class="compositeur_francais"><a href="under_construction.html" class="cell_button"><span class="hidden_text">1835 - 1890</span></a></td><!--1835 - 1890-->
+		<td colspan="56" class="compositeur_francais" OnClick="display('player_cesar_franck_CF'); return false;"><a href="" class="cell_button"><span class="hidden_text">1835 - 1890</span></a></td><!--1835 - 1890-->
 		<td colspan="67"></td><!--1891 - 1957-->
 		<!--<td id="last_cell"></td><!--1958-->
+	</tr>
+	<!--Lecteur des oeuvres principales de César Franck-->
+	<tr style="display:none;" id="player_cesar_franck_CF">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="Cesar_Franck/cesar_franck.html"></object></td>
 	</tr>
 	<!--Camille Saint Saëns-->
 	<tr>
@@ -325,9 +380,54 @@ function display(masque)
 		<!--<!--<td id="first_cell"></td><!--1759-->
 		<td colspan="75"></td><!--1760 - 1834-->
 		<td colspan="20" class="vivant_inactif"></td><!--1835 - 1854-->
-		<td colspan="67" class="compositeur_francais"><a href="under_construction.html" class="cell_button"><span class="hidden_text">1855 - 1921</span></a></td><!--1855 - 1921-->
+		<td colspan="67" class="compositeur_francais" OnClick="display('oeuvres_symphoniques_CSS'); display('oeuvres_pour_orchestre_CSS'); display('musique_de_chambre_CSS'); display('operas_CSS'); return false;"><a href="" class="cell_button"><span class="hidden_text">1855 - 1921</span></a></td><!--1855 - 1921-->
 		<td colspan="36"></td><!--1922 - 1957-->
 		<!--<td id="last_cell"></td><!--1958-->
+	</tr>
+	<!--Oeuvres symphoniques de Camille Saint-Saëns-->
+	<tr style="display:none;" id="oeuvres_symphoniques_CSS">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="categorie_oeuvres" OnClick="display('symphonie_No_3_CSS'); return false;"><a href="#">Oeuvres symphoniques</a></td>
+	</tr>
+	<!--Symphonie No. 3-->
+	<tr style="display:none;" id="symphonie_No_3_CSS">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="nom_oeuvre" OnClick="display('player_symphonie_No_3_CSS'); return false;"><a href="#">Symphonie No. 3 Op.78</a></td>
+	</tr>
+	<!--Lecteur de la symphonie No 3 de Camille Saint-Saëns-->
+	<tr style="display:none;" id="player_symphonie_No_3_CSS">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="Camille_Saint-Saens/symphonie_No_3.html"></object></td>
+	</tr>
+	<!--Oeuvres pour orchestre de Camille Saint-Saëns-->
+	<tr style="display:none;" id="oeuvres_pour_orchestre_CSS">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="categorie_oeuvres" OnClick="display('player_oeuvres_pour_orchestre_CSS'); return false;"><a href="#">Oeuvres pour orchestre</a></td>
+	</tr>
+	<!--Lecteur des oeuvres pour orchestre de Camille Saint-Saëns-->
+	<tr style="display:none;" id="player_oeuvres_pour_orchestre_CSS">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="Camille_Saint-Saens/oeuvres_pour_orchestre.html"></object></td>
+	</tr>
+	<!--Musique de chambre de Camille Saint-Saëns-->
+	<tr style="display:none;" id="musique_de_chambre_CSS">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="categorie_oeuvres" OnClick="display('player_musique_de_chambre_CSS'); return false;"><a href="#">Musique de chambre</a></td>
+	</tr>
+	<!--Lecteur des oeuvres de musique de chambre de Camille Saint-Saëns-->
+	<tr style="display:none;" id="player_musique_de_chambre_CSS">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="Camille_Saint-Saens/musique_de_chambre.html"></object></td>
+	</tr>
+	<!--Opéras de Camille Saint-Saëns-->
+	<tr style="display:none;" id="operas_CSS">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="categorie_oeuvres" OnClick="display('player_operas_CSS'); return false;"><a href="#">Opéras</a></td>
+	</tr>
+	<!--Lecteur des opéras de Camille Saint-Saëns-->
+	<tr style="display:none;" id="player_operas_CSS">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="Camille_Saint-Saens/operas.html"></object></td>
 	</tr>
 	<!--Georges Bizet-->
 	<tr>
