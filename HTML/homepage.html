@@ -911,8 +911,63 @@ function display(masque)
 		<!--<td id="first_cell"></td><!--1759-->
 		<td colspan="105"></td><!--1760 - 1864-->
 		<td colspan="28" class="vivant_inactif"></td><!--1865 - 1892-->
-		<td colspan="65" class="compositeur_tcheque"><a href="under_construction.html" class="cell_button"><span class="hidden_text">1893 - 1957</span></a></td><!--1893 - 1957-->
+		<td colspan="65" class="compositeur_finlandais" OnClick="display('oeuvres_symphoniques_JS'); return false;"><a href="" class="cell_button"><span class="hidden_text">1893 - 1957</span></a></td><!--1893 - 1957-->
 		<!--<td id="last_cell"></td><!--1958-->
+	</tr>
+	<!--Oeuvres symphoniques de Jean Sibelius-->
+	<tr style="display:none;" id="oeuvres_symphoniques_JS">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="categorie_oeuvres" OnClick="display('kullervo_JS'); display('finlandia_JS'); display('symphonie_2_JS'); display('kuolema_JS'); display('concerto_pour_violon_JS'); return false;"><a href="#">Oeuvres symphoniques</a></td>
+	</tr>
+	<!--Kullervo-->
+	<tr style="display:none;" id="kullervo_JS">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="nom_oeuvre" OnClick="display('player_kullervo_JS'); return false;"><a href="#">Kullervo Op. 7</a></td>
+	</tr>
+	<!--Lecteur de Kullervo-->
+	<tr style="display:none;" id="player_kullervo_JS">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="Jean_Sibelius/kullervo.html"></object></td>
+	</tr>
+	<!--Finlandia-->
+	<tr style="display:none;" id="finlandia_JS">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="nom_oeuvre" OnClick="display('player_finlandia_JS'); return false;"><a href="#">Finlandia Op. 26</a></td>
+	</tr>
+	<!--Lecteur de Finlandia-->
+	<tr style="display:none;" id="player_finlandia_JS">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="Jean_Sibelius/finlandia.html"></object></td>
+	</tr>
+	<!--Symphonie N°2-->
+	<tr style="display:none;" id="symphonie_2_JS">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="nom_oeuvre" OnClick="display('player_symphonie_2_JS'); return false;"><a href="#">Symphonie N°2 en ré majeur Op. 43</a></td>
+	</tr>
+	<!--Lecteur de la symphonie N°2 de Jean Sibelius-->
+	<tr style="display:none;" id="player_symphonie_2_JS">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="Jean_Sibelius/symphonie_2.html"></object></td>
+	</tr>
+	<!--Kuolema-->
+	<tr style="display:none;" id="kuolema_JS">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="nom_oeuvre" OnClick="display('player_kuolema_JS'); return false;"><a href="#">Kuolema Op. 44</a></td>
+	</tr>
+	<!--Lecteur de Kuolema de Jean Sibelius-->
+	<tr style="display:none;" id="player_kuolema_JS">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="Jean_Sibelius/kuolema.html"></object></td>
+	</tr>
+	<!--Concerto pour violon en ré mineur-->
+	<tr style="display:none;" id="concerto_pour_violon_JS">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="nom_oeuvre" OnClick="display('player_concerto_pour_violon_JS'); return false;"><a href="#">Concerto pour violon en ré mineur Op. 47</a></td>
+	</tr>
+	<!--Lecteur du concerto pour violon de Jean Sibelius-->
+	<tr style="display:none;" id="player_concerto_pour_violon_JS">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="Jean_Sibelius/concerto_pour_violon.html"></object></td>
 	</tr>
 	<!--Compositeurs espagnols-->
 	<tr>
