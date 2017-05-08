@@ -625,7 +625,7 @@ function display(masque)
 	<!--Oeuvres pour piano d'Érik Satie-->
 	<tr style="display:none;" id="oeuvres_pour_piano_ES">
 		<td class="nom_compositeur"></td>
-		<td colspan="199" class="categorie_oeuvres" OnClick="display('gymnopedies_ES'); display('gnossiennes_ES'); display('trois_morceaux_en_forme_de_poire_ES'); display('sports_et_divertissements_ES'); display('socrate_ES'); return false;"><a href="#">Oeuvres pour piano</a></td>
+		<td colspan="199" class="categorie_oeuvres" OnClick="display('gymnopedies_ES'); display('gnossiennes_ES'); display('trois_morceaux_en_forme_de_poire_ES'); display('sports_et_divertissements_ES'); display('socrate_ES'); display('je_te_veux_ES'); return false;"><a href="#">Oeuvres pour piano</a></td>
 	</tr>
 	<!--Gymnopédies-->
 	<tr style="display:none;" id="gymnopedies_ES">
@@ -677,6 +677,16 @@ function display(masque)
 		<td class="nom_compositeur"></td>
 		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="Erik_Satie/socrate.html"></object></td>
 	</tr>
+	<!--Je te veux-->
+	<tr style="display:none;" id="je_te_veux_ES">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="nom_oeuvre" OnClick="display('player_je_te_veux_ES'); return false;"><a href="#">Je te veux</a></td>
+	</tr>
+	<!--Lecteur de Socrate-->
+	<tr style="display:none;" id="player_je_te_veux_ES">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="Erik_Satie/je_te_veux.html"></object></td>
+	</tr>
 	<!--Ballets d'Érik Satie-->
 	<tr style="display:none;" id="ballets_ES">
 		<td class="nom_compositeur"></td>
@@ -708,10 +718,40 @@ function display(masque)
 		<!--<!--<td id="first_cell"></td><!--1759-->
 		<td colspan="115"></td><!--1760 - 1874-->
 		<td colspan="17" class="vivant_inactif"></td><!--1875 - 1891-->
-		<td colspan="41" class="compositeur_francais"><a href="maurice_ravel.html" class="cell_button"><span class="hidden_text">1892 - 1933</a></td><!--1892 - 1932-->
+		<td colspan="41" class="compositeur_francais" OnClick="display('oeuvres_pour_orchestre_MR'); display('oeuvres_pour_piano_MR'); return false;"><a href="" class="cell_button"><span class="hidden_text">1892 - 1933</a></td><!--1892 - 1932-->
 		<td colspan="5" class="vivant_inactif"></td><!--1933 - 1937-->
 		<td colspan="20"></td><!--1938 - 1957-->
 		<!--<td id="last_cell"></td><!--1958-->
+	</tr>
+	<!--Oeuvres pour orchestre de Maurice Ravel-->
+	<tr style="display:none;" id="oeuvres_pour_orchestre_MR">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="categorie_oeuvres" OnClick="display('bolero_MR'); return false;"><a href="#">Oeuvres pour orchestre</a></td>
+	</tr>
+	<!--Boléro de Ravel-->
+	<tr style="display:none;" id="bolero_MR">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="nom_oeuvre" OnClick="display('player_bolero_MR'); return false;"><a href="#">Boléro</a></td>
+	</tr>
+	<!--Lecteur du boléro-->
+	<tr style="display:none;" id="player_bolero_MR">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="Maurice_Ravel/bolero.html"></object></td>
+	</tr>
+	<!--Oeuvres pour piano de Maurice Ravel-->
+	<tr style="display:none;" id="oeuvres_pour_piano_MR">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="categorie_oeuvres" OnClick="display('jeux_d_eaux_MR'); return false;"><a href="#">Oeuvres pour piano</a></td>
+	</tr>
+	<!--Jeux d'eaux de Ravel-->
+	<tr style="display:none;" id="jeux_d_eaux_MR">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="nom_oeuvre" OnClick="display('player_jeux_d_eaux_MR'); return false;"><a href="#">Jeux d'eaux</a></td>
+	</tr>
+	<!--Lecteur des jeux d'eaux-->
+	<tr style="display:none;" id="player_jeux_d_eaux_MR">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="Maurice_Ravel/jeux_d_eaux.html"></object></td>
 	</tr>
 	<!--Compositeurs italiens-->
 	<tr>
