@@ -511,10 +511,105 @@ function display(masque)
 		<!--<!--<td id="first_cell"></td><!--1759-->
 		<td colspan="102"></td><!--1760 - 1861-->
 		<td colspan="22" class="vivant_inactif"></td><!--1862 - 1883-->
-		<td colspan="33" class="compositeur_francais"><a href="under_construction.html" class="cell_button"><span class="hidden_text">1884 - 1916</span></a></td><!--1884 - 1916-->
+		<td colspan="33" class="compositeur_francais" OnClick="display('musique_de_chambre_CD'); display('oeuvre_pour_orchestre_CD');  display('operas_CD'); display('oeuvres_symphoniques_CD'); display('oeuvres_pour_piano_CD'); return false;"><a href="" class="cell_button"><span class="hidden_text">1884 - 1916</span></a></td><!--1884 - 1916-->
 		<td colspan="2" class="vivant_inactif"></td><!--1917 - 1918-->
 		<td colspan="39"></td><!--1919 - 1957-->
 		<!--<td id="last_cell"></td><!--1958-->
+	</tr>
+	<!--Oeuvres pour piano de Claude Debussy-->
+	<tr style="display:none;" id="oeuvres_pour_piano_CD">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="categorie_oeuvres" OnClick="display('les_preludes_1_CD'); display('les_preludes_2_CD'); display('suite_bergamasque_CD'); return false;"><a href="#">Oeuvres pour piano</a></td>
+	</tr>
+	<!--Les préludes - Livre 1-->
+	<tr style="display:none;" id="les_preludes_1_CD">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="nom_oeuvre" OnClick="display('player_les_preludes_1_CD'); return false;"><a href="#">Les préludes - Livre 1</a></td>
+	</tr>
+	<!--Lecteur des préludes - Livre 1-->
+	<tr style="display:none;" id="player_les_preludes_1_CD">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="Claude_Debussy/preludes_1.html"></object></td>
+	</tr>
+	<!--Les préludes - Livre 2-->
+	<tr style="display:none;" id="les_preludes_2_CD">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="nom_oeuvre" OnClick="display('player_les_preludes_2_CD'); return false;"><a href="#">Les préludes - Livre 2</a></td>
+	</tr>
+	<!--Lecteur des préludes - Livre 2-->
+	<tr style="display:none;" id="player_les_preludes_2_CD">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="Claude_Debussy/preludes_2.html"></object></td>
+	</tr>
+	<!--Suite bergamasque-->
+	<tr style="display:none;" id="suite_bergamasque_CD">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="nom_oeuvre" OnClick="display('player_suite_bergamasque_CD'); return false;"><a href="#">Suite bergamasque</a></td>
+	</tr>
+	<!--Lecteur de la suite bergamasque-->
+	<tr style="display:none;" id="player_suite_bergamasque_CD">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="Claude_Debussy/suite_bergamasque.html"></object></td>
+	</tr>
+	<!--Oeuvres symphoniques de Claude Debussy-->
+	<tr style="display:none;" id="oeuvres_symphoniques_CD">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="categorie_oeuvres" OnClick="display('la_mer_CD'); return false;"><a href="#">Oeuvres symphoniques</a></td>
+	</tr>
+	<!--La mer-->
+	<tr style="display:none;" id="la_mer_CD">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="nom_oeuvre" OnClick="display('player_la_mer_CD'); return false;"><a href="#">La mer</a></td>
+	</tr>
+	<!--Lecteur de la mer-->
+	<tr style="display:none;" id="player_la_mer_CD">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="Claude_Debussy/la_mer.html"></object></td>
+	</tr>
+	<!--Oeuvres pour orchestre de Claude Debussy-->
+	<tr style="display:none;" id="oeuvre_pour_orchestre_CD">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="categorie_oeuvres" OnClick="display('prelude_a_l_apres_midi_d_un_faune_CD'); return false;"><a href="#">Oeuvres pour orchestre</a></td>
+	</tr>
+	<!--Prélude à l'après-midi d'un faune-->
+	<tr style="display:none;" id="prelude_a_l_apres_midi_d_un_faune_CD">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="nom_oeuvre" OnClick="display('player_prelude_a_l_apres_midi_d_un_faune_CD'); return false;"><a href="#">Prélude à l'après-midi d'un faune</a></td>
+	</tr>
+	<!--Lecteur du prélude à l'après-midi d'un faune-->
+	<tr style="display:none;" id="player_prelude_a_l_apres_midi_d_un_faune_CD">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="Claude_Debussy/prelude_a_l_apres_midi_d_un_faune.html"></object></td>
+	</tr>
+	<!--Musique de chambre de Claude Debussy-->
+	<tr style="display:none;" id="musique_de_chambre_CD">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="categorie_oeuvres" OnClick="display('quatuor_a_cordes_CD'); return false;"><a href="#">Musique de chambre</a></td>
+	</tr>
+	<!--Quatuor à cordes-->
+	<tr style="display:none;" id="quatuor_a_cordes_CD">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="nom_oeuvre" OnClick="display('player_quatuor_a_cordes_CD'); return false;"><a href="#">Quatuor à cordes</a></td>
+	</tr>
+	<!--Lecteur du quatuor à cordes-->
+	<tr style="display:none;" id="player_quatuor_a_cordes_CD">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="Claude_Debussy/quatuor_a_cordes.html"></object></td>
+	</tr>
+	<!--Opéras de Claude Debussy-->
+	<tr style="display:none;" id="operas_CD">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="categorie_oeuvres" OnClick="display('pelleas_et_melisande_CD'); return false;"><a href="#">Opéras</a></td>
+	</tr>
+	<!--Pelléas et Mélisande-->
+	<tr style="display:none;" id="pelleas_et_melisande_CD">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="nom_oeuvre" OnClick="display('player_pelleas_et_melisande_CD'); return false;"><a href="#">Pelléas et Mélisande</a></td>
+	</tr>
+	<!--Lecteur de Pelléas et Mélisande-->
+	<tr style="display:none;" id="player_pelleas_et_melisande_CD">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="Claude_Debussy/pelleas_et_melisande.html"></object></td>
 	</tr>
 	<!--Erik Satie-->
 	<tr>
@@ -522,10 +617,90 @@ function display(masque)
 		<!--<!--<td id="first_cell"></td><!--1759-->
 		<td colspan="106"></td><!--1760 - 1865-->
 		<td colspan="26" class="vivant_inactif"></td><!--1866 - 1891-->
-		<td colspan="32" class="compositeur_francais"><a href="under_construction.html" class="cell_button"><span class="hidden_text">1892 - 1923</span></a></td><!--1892 - 1923-->
+		<td colspan="32" class="compositeur_francais" OnClick="display('oeuvres_pour_piano_ES'); display('ballets_ES'); return false;"><a href="" class="cell_button"><span class="hidden_text">1892 - 1923</span></a></td><!--1892 - 1923-->
 		<td colspan="2" class="vivant_inactif"></td><!--1924 - 1925-->
 		<td colspan="32"></td><!--1926 - 1957-->
 		<!--<td id="last_cell"></td><!--1958-->
+	</tr>
+	<!--Oeuvres pour piano d'Érik Satie-->
+	<tr style="display:none;" id="oeuvres_pour_piano_ES">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="categorie_oeuvres" OnClick="display('gymnopedies_ES'); display('gnossiennes_ES'); display('trois_morceaux_en_forme_de_poire_ES'); display('sports_et_divertissements_ES'); display('socrate_ES'); return false;"><a href="#">Oeuvres pour piano</a></td>
+	</tr>
+	<!--Gymnopédies-->
+	<tr style="display:none;" id="gymnopedies_ES">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="nom_oeuvre" OnClick="display('player_gymnopedies_ES'); return false;"><a href="#">Trois gymnopédies</a></td>
+	</tr>
+	<!--Lecteur des gymnopédies-->
+	<tr style="display:none;" id="player_gymnopedies_ES">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="Erik_Satie/gymnopedies.html"></object></td>
+	</tr>
+	<!--Gnossiennes-->
+	<tr style="display:none;" id="gnossiennes_ES">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="nom_oeuvre" OnClick="display('player_gnossiennes_ES'); return false;"><a href="#">Six gnossiennes</a></td>
+	</tr>
+	<!--Lecteur des gnossiennes-->
+	<tr style="display:none;" id="player_gnossiennes_ES">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="Erik_Satie/gnossiennes.html"></object></td>
+	</tr>
+	<!--Trois morceaux en forme de poire-->
+	<tr style="display:none;" id="trois_morceaux_en_forme_de_poire_ES">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="nom_oeuvre" OnClick="display('player_trois_morceaux_en_forme_de_poire_ES'); return false;"><a href="#">Trois morceaux en forme de poire</a></td>
+	</tr>
+	<!--Lecteur des trois morceaux en forme de poire-->
+	<tr style="display:none;" id="player_trois_morceaux_en_forme_de_poire_ES">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="Erik_Satie/trois_morceaux_en_forme_de_poire.html"></object></td>
+	</tr>
+	<!--Sports et divertissements-->
+	<tr style="display:none;" id="sports_et_divertissements_ES">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="nom_oeuvre" OnClick="display('player_sports_et_divertissements_ES'); return false;"><a href="#">Sports et divertissements</a></td>
+	</tr>
+	<!--Lecteur de sports et divertissements-->
+	<tr style="display:none;" id="player_sports_et_divertissements_ES">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="Erik_Satie/sports_et_divertissements.html"></object></td>
+	</tr>
+	<!--Socrate-->
+	<tr style="display:none;" id="socrate_ES">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="nom_oeuvre" OnClick="display('player_socrate_ES'); return false;"><a href="#">Socrate</a></td>
+	</tr>
+	<!--Lecteur de Socrate-->
+	<tr style="display:none;" id="player_socrate_ES">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="Erik_Satie/socrate.html"></object></td>
+	</tr>
+	<!--Ballets d'Érik Satie-->
+	<tr style="display:none;" id="ballets_ES">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="categorie_oeuvres" OnClick="display('parade_ES'); display('relache_ES'); return false;"><a href="#">Ballets</a></td>
+	</tr>
+	<!--Parade-->
+	<tr style="display:none;" id="parade_ES">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="nom_oeuvre" OnClick="display('player_parade_ES'); return false;"><a href="#">Parade</a></td>
+	</tr>
+	<!--Lecteur de parade-->
+	<tr style="display:none;" id="player_parade_ES">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="Erik_Satie/parade.html"></object></td>
+	</tr>
+	<!--Relâche-->
+	<tr style="display:none;" id="relache_ES">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="nom_oeuvre" OnClick="display('player_relache_ES'); return false;"><a href="#">Relâche</a></td>
+	</tr>
+	<!--Lecteur de relâche-->
+	<tr style="display:none;" id="player_relache_ES">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="Erik_Satie/relache.html"></object></td>
 	</tr>
 	<!--Maurice Ravel-->
 	<tr>
@@ -917,7 +1092,7 @@ function display(masque)
 	<!--Oeuvres symphoniques de Jean Sibelius-->
 	<tr style="display:none;" id="oeuvres_symphoniques_JS">
 		<td class="nom_compositeur"></td>
-		<td colspan="199" class="categorie_oeuvres" OnClick="display('kullervo_JS'); display('finlandia_JS'); display('symphonie_2_JS'); display('kuolema_JS'); display('concerto_pour_violon_JS'); return false;"><a href="#">Oeuvres symphoniques</a></td>
+		<td colspan="199" class="categorie_oeuvres" OnClick="display('kullervo_JS'); display('finlandia_JS'); display('symphonie_2_JS'); display('kuolema_JS'); display('concerto_pour_violon_JS'); display('tapiola_JS'); return false;"><a href="#">Oeuvres symphoniques</a></td>
 	</tr>
 	<!--Kullervo-->
 	<tr style="display:none;" id="kullervo_JS">
@@ -968,6 +1143,16 @@ function display(masque)
 	<tr style="display:none;" id="player_concerto_pour_violon_JS">
 		<td class="nom_compositeur"></td>
 		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="Jean_Sibelius/concerto_pour_violon.html"></object></td>
+	</tr>
+	<!--Tapiola-->
+	<tr style="display:none;" id="tapiola_JS">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="nom_oeuvre" OnClick="display('player_tapiola_JS'); return false;"><a href="#">Tapiola Op. 112</a></td>
+	</tr>
+	<!--Lecteur de Tapiola de Jean Sibelius-->
+	<tr style="display:none;" id="player_tapiola_JS">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="Jean_Sibelius/tapiola.html"></object></td>
 	</tr>
 	<!--Compositeurs espagnols-->
 	<tr>
