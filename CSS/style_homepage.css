@@ -357,6 +357,8 @@ td
 .hidden_text
 {
 	display: none;
+	margin: auto;
+	padding: auto;
 }
 
 .cell_button:hover .hidden_text{
@@ -364,6 +366,8 @@ td
 	color: white;
 	display: block;
 	overflow: hidden;
+	/*display: flex;
+	justify-content: space-between;*/
 }
 
 .categorie_oeuvres
