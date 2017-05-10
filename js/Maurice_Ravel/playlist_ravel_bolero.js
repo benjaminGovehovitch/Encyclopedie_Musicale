@@ -13,8 +13,8 @@ jQuery(function ($) {
                         tracks = [{
                 "track": 1,
                 "name": "Boléro",
-                "length": "15:49",
-                "file": "Ravel-Bolero"
+                "length": "17:07",
+                "file": "Bolero"
             },],
             buildPlaylist = $.each(tracks, function(key, value) {
                 var trackNumber = value.track,
