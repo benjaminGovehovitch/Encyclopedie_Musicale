@@ -23,7 +23,7 @@ jQuery(function ($) {
                 "track": 3,
                 "name": "Chanson de brigands",
                 "length": "4:03",
-                "file": "03_Chason_de_brigrands"
+                "file": "03_Chanson_de_brigrands"
             }, {
                 "track": 4,
                 "name": "Chant de bonheur",
