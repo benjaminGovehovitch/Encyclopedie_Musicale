@@ -8,33 +8,23 @@ jQuery(function ($) {
     if (supportsAudio) {
         var index = 0,
             playing = false,
-            mediaPath = 'https://archive.org/download/Symphonie_fantastique_201704/',
+            mediaPath = 'https://archive.org/download/Paganini_Concerto_No1/',
             extension = '',
                         tracks = [{
                 "track": 1,
-                "name": "Rêveries Passions",
-                "length": "13:59",
-                "file": "1-Reveries_Passions"
-            }, {
+                "name": "Allegro maestoso - Tempo giusto",
+                "length": "21:37",
+                "file": "01_allegroMaestoso-TempoGiusto"
+	    },{
                 "track": 2,
-                "name": "Un bal",
-                "length": "6:26",
-                "file": "2-Un_bal"
-            }, {
+                "name": "Adagio",
+                "length": "5:41",
+                "file": "02_Adagio"
+	    },{
                 "track": 3,
-                "name": "Scène aux champs",
-                "length": "15:00",
-                "file": "3-Scene_aux_champs"
-            }, {
-                "track": 4,
-                "name": "Marche au supplice",
-                "length": "4:29",
-                "file": "4-Marche_au_supplice"
-            }, {
-                "track": 5,
-                "name": "Songe d'une nuit du Sabbat",
-                "length": "9:17",
-                "file": "5-Songe_d_une_nuit_du_sabbat"
+                "name": "Rondo : Allegro spirituoso - Un poco più presto",
+                "length": "10:36",
+                "file": "03_Rondo-Allegro_spirituoso_Un_poco_piu_presto"
             },],
             buildPlaylist = $.each(tracks, function(key, value) {
                 var trackNumber = value.track,

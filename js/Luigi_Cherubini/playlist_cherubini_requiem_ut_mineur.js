@@ -8,33 +8,43 @@ jQuery(function ($) {
     if (supportsAudio) {
         var index = 0,
             playing = false,
-            mediaPath = 'https://archive.org/download/Symphonie_fantastique_201704/',
+            mediaPath = 'https://archive.org/download/Cherubini_Requiem_ut_mineur/',
             extension = '',
                         tracks = [{
                 "track": 1,
-                "name": "Rêveries Passions",
-                "length": "13:59",
-                "file": "1-Reveries_Passions"
+                "name": "Introitus et Kyrie",
+                "length": "7:34",
+                "file": "01_Introitus_et_Kyrie"
             }, {
                 "track": 2,
-                "name": "Un bal",
-                "length": "6:26",
-                "file": "2-Un_bal"
+                "name": "Graduale",
+                "length": "1:17",
+                "file": "02_Graduale"
             }, {
                 "track": 3,
-                "name": "Scène aux champs",
-                "length": "15:00",
-                "file": "3-Scene_aux_champs"
+                "name": "Dies iare",
+                "length": "7:54",
+                "file": "03_Sequentia_Dies_irae"
             }, {
                 "track": 4,
-                "name": "Marche au supplice",
-                "length": "4:29",
-                "file": "4-Marche_au_supplice"
+                "name": "Offertorium",
+                "length": "12:43",
+                "file": "04_Offertorium"
             }, {
                 "track": 5,
-                "name": "Songe d'une nuit du Sabbat",
-                "length": "9:17",
-                "file": "5-Songe_d_une_nuit_du_sabbat"
+                "name": "Sanctus et Benedictus",
+                "length": "1:14",
+                "file": "05_Sanctus_et_Benedictus"
+            }, {
+                "track": 6,
+                "name": "Pie Jesu",
+                "length": "3:25",
+                "file": "06_Pie_Jesu"
+            }, {
+                "track": 7,
+                "name": "Agnus Dei",
+                "length": "5:34",
+                "file": "07_Agnus_dei"
             },],
             buildPlaylist = $.each(tracks, function(key, value) {
                 var trackNumber = value.track,

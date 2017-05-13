@@ -8,33 +8,13 @@ jQuery(function ($) {
     if (supportsAudio) {
         var index = 0,
             playing = false,
-            mediaPath = 'https://archive.org/download/Symphonie_fantastique_201704/',
+            mediaPath = 'https://archive.org/download/Paganini_Duetto_Amoroso/',
             extension = '',
                         tracks = [{
                 "track": 1,
-                "name": "Rêveries Passions",
-                "length": "13:59",
-                "file": "1-Reveries_Passions"
-            }, {
-                "track": 2,
-                "name": "Un bal",
-                "length": "6:26",
-                "file": "2-Un_bal"
-            }, {
-                "track": 3,
-                "name": "Scène aux champs",
-                "length": "15:00",
-                "file": "3-Scene_aux_champs"
-            }, {
-                "track": 4,
-                "name": "Marche au supplice",
-                "length": "4:29",
-                "file": "4-Marche_au_supplice"
-            }, {
-                "track": 5,
-                "name": "Songe d'une nuit du Sabbat",
-                "length": "9:17",
-                "file": "5-Songe_d_une_nuit_du_sabbat"
+                "name": "Duetto amoroso",
+                "length": "7:34",
+                "file": "DuettoAmoroso-N.paganini"
             },],
             buildPlaylist = $.each(tracks, function(key, value) {
                 var trackNumber = value.track,

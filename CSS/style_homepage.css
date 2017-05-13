@@ -240,6 +240,22 @@ td
 .compositeur_italien:hover
 {
 	background-color: rgba(0,146,70,0.5);
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#009246+0,0bc485+50,02b777+51,5ff495+100 */
+	background: #009246; /* Old browsers */
+	background: -moz-linear-gradient(top, #009246 0%, #0bc485 50%, #02b777 51%, #5ff495 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #009246 0%,#0bc485 50%,#02b777 51%,#5ff495 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #009246 0%,#0bc485 50%,#02b777 51%,#5ff495 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#009246', endColorstr='#5ff495',GradientType=0 ); /* IE6-9 */
+}
+
+.compositeur_italien:active
+{
+    -webkit-box-shadow: rgba(255,255,255,0.25)/* 0px 1px 0px, inset rgba(255,255,255,0.03) 0px 20px 0px, inset rgba(0,0,0,0.15) 0px -20px 20px, inset rgba(255,255,255,0.05) 0px 20px 20px*/;
+     -khtml-box-shadow: rgba(255,255,255,0.25) 0px 1px 0px, inset rgba(255,255,255,0.03) 0px 20px 0px, inset rgba(0,0,0,0.15) 0px -20px 20px, inset rgba(255,255,255,0.05) 0px 20px 20px;
+       -moz-box-shadow: rgba(255,255,255,0.25) 0px 1px 0px, inset rgba(255,255,255,0.03) 0px 20px 0px, inset rgba(0,0,0,0.15) 0px -20px 20px, inset rgba(255,255,255,0.05) 0px 20px 20px;
+         -o-box-shadow: rgba(255,255,255,0.25) 0px 1px 0px, inset rgba(255,255,255,0.03) 0px 20px 0px, inset rgba(0,0,0,0.15) 0px -20px 20px, inset rgba(255,255,255,0.05) 0px 20px 20px;
+            box-shadow: rgba(255,255,255,0.25) 0px 1px 0px, inset rgba(255,255,255,0.03) 0px 20px 0px, inset rgba(0,0,0,0.15) 0px -20px 20px, inset rgba(255,255,255,0.05) 0px 20px 20px;
+    text-shadow:1px 1px 1px #eee;
 }
 
 .compositeur_allemand

@@ -798,10 +798,25 @@ function display(masque)
 		<td class="nom_compositeur"><a href="https://fr.wikipedia.org/wiki/Luigi_Cherubini">Luigi Cherubini</a></td><!--Nom du compositeur-->
 		<!--<!--<td id="first_cell"></td><!--1759-->
 		<td colspan="22" class="vivant_inactif"></td><!--1760 - 1781-->
-		<td colspan="55" class="compositeur_italien"><a href="HTML/under_construction.html" class="cell_button"><span class="hidden_text"><span>1782</span><span> - </span><span>1836</span></span></a></td><!--1782 - 1836-->
+		<td colspan="55" class="compositeur_italien" OnClick="display('oeuvres_vocales_LC'); return false;"><a href="" class="cell_button"><span class="hidden_text"><span>1782</span><span> - </span><span>1836</span></span></a></td><!--1782 - 1836-->
 		<td colspan="6" class="vivant_inactif"></td><!--1837 - 1842-->
 		<td colspan="115"></td><!--1843 - 1957-->
 		<!--<td id="last_cell"></td><!--1958-->
+	</tr>
+	<!--Oeuvres vocales de Luigi Cherubini-->
+	<tr style="display:none;" id="oeuvres_vocales_LC">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="categorie_oeuvres" OnClick="display('requiem_ut_mineur_LC'); return false;"><a href="#">Oeuvres vocales</a></td>
+	</tr>
+	<!--Requiem en ut mineur-->
+	<tr style="display:none;" id="requiem_ut_mineur_LC">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="nom_oeuvre" OnClick="display('player_requiem_ut_mineur_LC'); return false;"><a href="#">Requiem en ut mineur</a></td>
+	</tr>
+	<!--Lecteur du requiem-->
+	<tr style="display:none;" id="player_requiem_ut_mineur_LC">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="HTML/Luigi_Cherubini/requiem_ut_mineur.html"></object></td>
 	</tr>
 	<!--Niccolò Paganini-->
 	<tr>
@@ -809,10 +824,55 @@ function display(masque)
 		<!--<!--<td id="first_cell"></td><!--1759-->
 		<td colspan="22"></td><!--1760 - 1781-->
 		<td colspan="8" class="vivant_inactif"></td><!--1782 - 1789-->
-		<td colspan="46" class="compositeur_italien"><a href="HTML/under_construction.html" class="cell_button"><span class="hidden_text"><span>1790</span><span> - </span><span>1835</span></span></a></td><!--1790 - 1835-->
+		<td colspan="46" class="compositeur_italien" OnClick="display('oeuvres_pour_orchestre_NP'); display('oeuvres_pour_violon_NP'); display('oeuvres_guitare_violon_NP'); return false;"><a href="" class="cell_button"><span class="hidden_text"><span>1790</span><span> - </span><span>1835</span></span></a></td><!--1790 - 1835-->
 		<td colspan="5" class="vivant_inactif"></td><!--1836 - 1840-->
 		<td colspan="117"></td><!--1841 - 1957-->
 		<!--<td id="last_cell"></td><!--1958-->
+	</tr>
+	<!--Oeuvres pour orchestre de Niccolò Paganini-->
+	<tr style="display:none;" id="oeuvres_pour_orchestre_NP">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="categorie_oeuvres" OnClick="display('concerto_no_1_NP'); return false;"><a href="#">Oeuvres pour orchestre</a></td>
+	</tr>
+	<!--Concerto no 1-->
+	<tr style="display:none;" id="concerto_no_1_NP">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="nom_oeuvre" OnClick="display('player_concerto_no_1_NP'); return false;"><a href="#">Concerto No1 pour violon et orchestre</a></td>
+	</tr>
+	<!--Lecteur du concerto no 1-->
+	<tr style="display:none;" id="player_concerto_no_1_NP">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="HTML/Niccolo_Paganini/concerto_no1.html"></object></td>
+	</tr>
+	<!--Oeuvres pour violon de Niccolò Paganini-->
+	<tr style="display:none;" id="oeuvres_pour_violon_NP">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="categorie_oeuvres" OnClick="display('24_caprices_pour_violon_NP'); return false;"><a href="#">Oeuvres pour violon</a></td>
+	</tr>
+	<!--24 caprices pour violon-->
+	<tr style="display:none;" id="24_caprices_pour_violon_NP">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="nom_oeuvre" OnClick="display('player_24_caprices_pour_violon_NP'); return false;"><a href="#">24 caprices pour violon</a></td>
+	</tr>
+	<!--Lecteur du concerto no 1-->
+	<tr style="display:none;" id="player_24_caprices_pour_violon_NP">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="HTML/Niccolo_Paganini/24_caprices_pour_violon.html"></object></td>
+	</tr>
+	<!--Oeuvres pour violon et guitare de Niccolò Paganini-->
+	<tr style="display:none;" id="oeuvres_guitare_violon_NP">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="categorie_oeuvres" OnClick="display('duetto_amoroso_NP'); return false;"><a href="#">Oeuvres pour violon et guitare</a></td>
+	</tr>
+	<!--Duetto amoroso-->
+	<tr style="display:none;" id="duetto_amoroso_NP">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="nom_oeuvre" OnClick="display('player_duetto_amoroso_NP'); return false;"><a href="#">Duetto amoroso</a></td>
+	</tr>
+	<!--Lecteur de duetto amoroso-->
+	<tr style="display:none;" id="player_duetto_amoroso_NP">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="HTML/Niccolo_Paganini/duetto_amoroso.html"></object></td>
 	</tr>
 	<!--Gioachino Rossini-->
 	<tr>
