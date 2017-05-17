@@ -265,7 +265,13 @@ td
 
 .compositeur_allemand:hover
 {
-	background-color: rgba(255,206,0,0.5);
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffce00+0,ffff3f+50,fff331+51,ffff4f+100 */
+	background: #ffce00; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffce00 0%, #ffff3f 50%, #fff331 51%, #ffff4f 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #ffce00 0%,#ffff3f 50%,#fff331 51%,#ffff4f 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #ffce00 0%,#ffff3f 50%,#fff331 51%,#ffff4f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffce00', endColorstr='#ffff4f',GradientType=0 ); /* IE6-9 */
+	color: black;
 }
 
 .compositeur_autrichien
@@ -370,7 +376,7 @@ td
 	width: 100%;
 }
 
-.hidden_text
+.hidden_text, .hidden_text_black
 {
 	display: none;
 	margin: auto;
@@ -380,6 +386,15 @@ td
 .cell_button:hover .hidden_text{
 	text-align: center;
 	color: white;
+	display: block;
+	overflow: hidden;
+	/*display: flex;
+	justify-content: space-between;*/
+}
+
+.cell_button:hover .hidden_text_black{
+	text-align: center;
+	color: black;
 	display: block;
 	overflow: hidden;
 	/*display: flex;
@@ -434,7 +449,7 @@ td
 .player_oeuvres_symphoniques object
 {
 	width: 100%;
-	height: 725px;
+	height: 570px;
 }
 
 .player_ouvertures object
