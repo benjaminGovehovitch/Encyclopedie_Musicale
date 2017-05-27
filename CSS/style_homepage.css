@@ -301,7 +301,12 @@ td
 
 .compositeur_polonais:hover
 {
-	background-color: rgba(220,20,60,0.5);
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#dc143c+0,e7467b+50,de396d+51,ff768b+100 */
+	background: #dc143c; /* Old browsers */
+	background: -moz-linear-gradient(top, #dc143c 0%, #e7467b 50%, #de396d 51%, #ff768b 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #dc143c 0%,#e7467b 50%,#de396d 51%,#ff768b 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #dc143c 0%,#e7467b 50%,#de396d 51%,#ff768b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dc143c', endColorstr='#ff768b',GradientType=0 ); /* IE6-9 */
 }
 
 .compositeur_hongrois

@@ -936,7 +936,7 @@ function display(masque)
 		<!--<td id="first_cell"></td><!--1759-->
 		<td colspan="10"></td><!--1760 - 1769-->
 		<td colspan="8" class="vivant_inactif"></td><!--1770 - 1777-->
-		<td colspan="49" class="compositeur_allemand" OnClick="display('sonates_LVB'); display('oeuvres_symphoniques_LVB'); display('concertos_LVB'); return false;"><a href="" class="cell_button"><span class="hidden_text_black"><span>1778</span><span> - </span><span>1826</span></span></a></td><!--1778 - 1826-->
+		<td colspan="49" class="compositeur_allemand" OnClick="display('sonates_LVB'); display('oeuvres_symphoniques_LVB'); display('concertos_LVB'); display('musique_chambre_LVB'); return false;"><a href="" class="cell_button"><span class="hidden_text_black"><span>1778</span><span> - </span><span>1826</span></span></a></td><!--1778 - 1826-->
 		<td class="vivant_inactif"></td><!--1827 - 1827-->
 		<td colspan="130"></td><!--1828 - 1957-->
 		<!--<td id="last_cell"></td><!--1958-->
@@ -1206,6 +1206,161 @@ function display(masque)
 		<td class="nom_compositeur"></td>
 		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="HTML/Ludwig_Van_Beethoven/concerto_piano_5.html"></object></td>
 	</tr>
+	<!--Musique de chambre de Ludwig Van Beethoven-->
+	<tr style="display:none;" id="musique_chambre_LVB">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="categorie_oeuvres" OnClick="display('variations_diabelli_LVB'); display('sonate_printemps_LVB'); display('sonate_kreutzer_LVB'); display('sonate_violoncelle_piano_1_LVB'); display('sonate_violoncelle_piano_2_LVB'); display('sonate_violoncelle_piano_3_LVB'); display('sonate_violoncelle_piano_4_LVB'); display('sonate_violoncelle_piano_5_LVB'); display('trio_archiduc_LVB'); display('quatuor_cordes_12_LVB'); display('quatuor_cordes_13_LVB'); display('quatuor_cordes_14_LVB'); display('quatuor_cordes_15_LVB'); display('quatuor_cordes_16_LVB'); display('quatuor_cordes_17_LVB'); return false;"><a href="#">Musique de chambre</a></td>
+	</tr>
+	<!--Variations diabelli-->
+	<tr style="display:none;" id="variations_diabelli_LVB">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="nom_oeuvre" OnClick="display('player_variations_diabelli_LVB'); return false;"><a href="#">Variations diabelli</a></td>
+	</tr>
+	<!--Lecteur des variations diabelli-->
+	<tr style="display:none;" id="player_variations_diabelli_LVB">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="HTML/Ludwig_Van_Beethoven/variations_diabelli.html"></object></td>
+	</tr>
+	<!--Sonate pour violon et piano n°5 "Le printemps"-->
+	<tr style="display:none;" id="sonate_printemps_LVB">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="nom_oeuvre" OnClick="display('player_sonate_printemps_LVB'); return false;"><a href="#">Sonate pour violon et piano n°5. Opus 24. "Le printemps"</a></td>
+	</tr>
+	<!--Lecteur de la sonate pour violon et piano n°5-->
+	<tr style="display:none;" id="player_sonate_printemps_LVB">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="HTML/Ludwig_Van_Beethoven/sonate_printemps.html"></object></td>
+	</tr>
+	<!--Sonate pour violon et piano n°9 "A Kreutzer"-->
+	<tr style="display:none;" id="sonate_kreutzer_LVB">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="nom_oeuvre" OnClick="display('player_sonate_kreutzer_LVB'); return false;"><a href="#">Sonate pour violon et piano n°9. Opus 47. "À Kreutzer"</a></td>
+	</tr>
+	<!--Lecteur de la sonate pour violon et piano n°9-->
+	<tr style="display:none;" id="player_sonate_kreutzer_LVB">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="HTML/Ludwig_Van_Beethoven/sonate_kreutzer.html"></object></td>
+	</tr>
+	<!--Sonate pour violoncelle et piano n°1-->
+	<tr style="display:none;" id="sonate_violoncelle_piano_1_LVB">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="nom_oeuvre" OnClick="display('player_sonate_violoncelle_piano_1_LVB'); return false;"><a href="#">Sonate pour violoncelle et piano n°1. Opus 5 - n°1</a></td>
+	</tr>
+	<!--Lecteur de la sonate pour violoncelle et piano n°1-->
+	<tr style="display:none;" id="player_sonate_violoncelle_piano_1_LVB">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="HTML/Ludwig_Van_Beethoven/sonate_violoncelle_piano_1.html"></object></td>
+	</tr>
+	<!--Sonate pour violoncelle et piano n°2-->
+	<tr style="display:none;" id="sonate_violoncelle_piano_2_LVB">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="nom_oeuvre" OnClick="display('player_sonate_violoncelle_piano_2_LVB'); return false;"><a href="#">Sonate pour violoncelle et piano n°2. Opus 5 - n°2</a></td>
+	</tr>
+	<!--Lecteur de la sonate pour violoncelle et piano n°2-->
+	<tr style="display:none;" id="player_sonate_violoncelle_piano_2_LVB">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="HTML/Ludwig_Van_Beethoven/sonate_violoncelle_piano_2.html"></object></td>
+	</tr>
+	<!--Sonate pour violoncelle et piano n°3-->
+	<tr style="display:none;" id="sonate_violoncelle_piano_3_LVB">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="nom_oeuvre" OnClick="display('player_sonate_violoncelle_piano_3_LVB'); return false;"><a href="#">Sonate pour violoncelle et piano n°3. Opus 69</a></td>
+	</tr>
+	<!--Lecteur de la sonate pour violoncelle et piano n°3-->
+	<tr style="display:none;" id="player_sonate_violoncelle_piano_3_LVB">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="HTML/Ludwig_Van_Beethoven/sonate_violoncelle_piano_3.html"></object></td>
+	</tr>
+	<!--Sonate pour violoncelle et piano n°4-->
+	<tr style="display:none;" id="sonate_violoncelle_piano_4_LVB">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="nom_oeuvre" OnClick="display('player_sonate_violoncelle_piano_4_LVB'); return false;"><a href="#">Sonate pour violoncelle et piano n°4. Opus 102 - n°1</a></td>
+	</tr>
+	<!--Lecteur de la sonate pour violoncelle et piano n°4-->
+	<tr style="display:none;" id="player_sonate_violoncelle_piano_4_LVB">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="HTML/Ludwig_Van_Beethoven/sonate_violoncelle_piano_4.html"></object></td>
+	</tr>
+	<!--Sonate pour violoncelle et piano n°5-->
+	<tr style="display:none;" id="sonate_violoncelle_piano_5_LVB">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="nom_oeuvre" OnClick="display('player_sonate_violoncelle_piano_5_LVB'); return false;"><a href="#">Sonate pour violoncelle et piano n°5. Opus 102 - n°2</a></td>
+	</tr>
+	<!--Lecteur de la sonate pour violoncelle et piano n°5-->
+	<tr style="display:none;" id="player_sonate_violoncelle_piano_5_LVB">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="HTML/Ludwig_Van_Beethoven/sonate_violoncelle_piano_5.html"></object></td>
+	</tr>
+	<!--Trio pour piano, violoncelle et violon n°7 "L'archiduc"-->
+	<tr style="display:none;" id="trio_archiduc_LVB">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="nom_oeuvre" OnClick="display('player_trio_archiduc_LVB'); return false;"><a href="#">Trio pour piano, violoncelle et violon n°7 "L'archiduc"</a></td>
+	</tr>
+	<!--Lecteur du trio pour piano, violoncelle et violon n°7-->
+	<tr style="display:none;" id="player_trio_archiduc_LVB">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="HTML/Ludwig_Van_Beethoven/trio_piano_violoncelle_violon_archiduc.html"></object></td>
+	</tr>
+	<!--Quatuor à cordes n°12-->
+	<tr style="display:none;" id="quatuor_cordes_12_LVB">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="nom_oeuvre" OnClick="display('player_quatuor_cordes_12_LVB'); return false;"><a href="#">Quatuor à cordes n°12</a></td>
+	</tr>
+	<!--Lecteur du quatuor à cordes n°12-->
+	<tr style="display:none;" id="player_quatuor_cordes_12_LVB">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="HTML/Ludwig_Van_Beethoven/quatuor_cordes_12.html"></object></td>
+	</tr>
+	<!--Quatuor à cordes n°13-->
+	<tr style="display:none;" id="quatuor_cordes_13_LVB">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="nom_oeuvre" OnClick="display('player_quatuor_cordes_13_LVB'); return false;"><a href="#">Quatuor à cordes n°13</a></td>
+	</tr>
+	<!--Lecteur du quatuor à cordes n°13-->
+	<tr style="display:none;" id="player_quatuor_cordes_13_LVB">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="HTML/Ludwig_Van_Beethoven/quatuor_cordes_13.html"></object></td>
+	</tr>
+	<!--Quatuor à cordes n°14-->
+	<tr style="display:none;" id="quatuor_cordes_14_LVB">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="nom_oeuvre" OnClick="display('player_quatuor_cordes_14_LVB'); return false;"><a href="#">Quatuor à cordes n°14</a></td>
+	</tr>
+	<!--Lecteur du quatuor à cordes n°14-->
+	<tr style="display:none;" id="player_quatuor_cordes_14_LVB">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="HTML/Ludwig_Van_Beethoven/quatuor_cordes_14.html"></object></td>
+	</tr>
+	<!--Quatuor à cordes n°15-->
+	<tr style="display:none;" id="quatuor_cordes_15_LVB">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="nom_oeuvre" OnClick="display('player_quatuor_cordes_15_LVB'); return false;"><a href="#">Quatuor à cordes n°15</a></td>
+	</tr>
+	<!--Lecteur du quatuor à cordes n°15-->
+	<tr style="display:none;" id="player_quatuor_cordes_15_LVB">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="HTML/Ludwig_Van_Beethoven/quatuor_cordes_15.html"></object></td>
+	</tr>
+	<!--Quatuor à cordes n°16-->
+	<tr style="display:none;" id="quatuor_cordes_16_LVB">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="nom_oeuvre" OnClick="display('player_quatuor_cordes_16_LVB'); return false;"><a href="#">Quatuor à cordes n°16</a></td>
+	</tr>
+	<!--Lecteur du quatuor à cordes n°16-->
+	<tr style="display:none;" id="player_quatuor_cordes_16_LVB">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="HTML/Ludwig_Van_Beethoven/quatuor_cordes_16.html"></object></td>
+	</tr>
+	<!--Quatuor à cordes n°17-->
+	<tr style="display:none;" id="quatuor_cordes_17_LVB">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="nom_oeuvre" OnClick="display('player_quatuor_cordes_17_LVB'); return false;"><a href="#">Quatuor à cordes n°17</a></td>
+	</tr>
+	<!--Lecteur du quatuor à cordes n°17-->
+	<tr style="display:none;" id="player_quatuor_cordes_17_LVB">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="HTML/Ludwig_Van_Beethoven/quatuor_cordes_17.html"></object></td>
+	</tr>
 	<!--Carl Maria Von Weber-->
 	<tr>
 		<td class="nom_compositeur"><a href="https://fr.wikipedia.org/wiki/Carl_Maria_von_Weber">Carl Maria Von Weber</a></td><!--Nom du compositeur-->
@@ -1405,9 +1560,24 @@ function display(masque)
 		<!--<td id="first_cell"></td><!--1759-->
 		<td colspan="50"></td><!--1760 - 1809-->
 		<td colspan="7" class="vivant_inactif"></td><!--1810 - 1816-->
-		<td colspan="33" class="compositeur_polonais"><a href="HTML/under_construction.html" class="cell_button"><span class="hidden_text"><span>1817</span><span> - </span><span>1849</span></span></a></td><!--1817 - 1849-->
+		<td colspan="33" class="compositeur_polonais" OnClick="display('oeuvres_piano_FC'); return false;"><a href="" class="cell_button"><span class="hidden_text"><span>1817</span><span> - </span><span>1849</span></span></a></td><!--1817 - 1849-->
 		<td colspan="108"></td><!--1850 - 1957-->
 		<!--<td id="last_cell"></td><!--1958-->
+	</tr>
+	<!--Oeuvres pour piano de Frédéric Chopin-->
+	<tr style="display:none;" id="oeuvres_piano_FC">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="categorie_oeuvres" OnClick="display('nocturnes_FC'); return false;"><a href="#">Oeuvres pour piano</a></td>
+	</tr>
+	<!--Nocturnes de Chopin-->
+	<tr style="display:none;" id="nocturnes_FC">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="nom_oeuvre" OnClick="display('player_nocturnes_FC'); return false;"><a href="#">Nocturnes</a></td>
+	</tr>
+	<!--Lecteur des nocturnes-->
+	<tr style="display:none;" id="player_nocturnes_FC">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="HTML/Frederic_Chopin/nocturnes.html"></object></td>
 	</tr>
 	<!--Compositeurs hongrois-->
 	<tr>
