@@ -8,113 +8,103 @@ jQuery(function ($) {
     if (supportsAudio) {
         var index = 0,
             playing = false,
-            mediaPath = 'https://archive.org/download/Chopin_Nocturnes/',
+            mediaPath = 'https://archive.org/download/Chopin_Valses/',
             extension = '',
                         tracks = [{
                 "track": 1,
-                "name": "Nocturne 1 en si bémol mineur. Opus 9 n°1",
-                "length": "1:53",
-                "file": "01_Nocturne_01"
+                "name": "Grande valse brillante en mi bémol majeur. Op. 18",
+                "length": "6:08",
+                "file": "01_Op_18_Grande_Valse_Brillante_E_flat_major"
             }, {
                 "track": 2,
-                "name": "Nocturne 2 en mi bémol majeur. Opus 9 n°2",
-                "length": "2:26",
-                "file": "02_Nocturne_02"
+                "name": "Grande Valse brillante en la bémol majeur. Op. 34 n°1",
+                "length": "6:01",
+                "file": "02_Op_34_1_A_flat_major"
             }, {
                 "track": 3,
-                "name": "Nocturne 3 en si majeur. Opus 9 n°3",
-                "length": "4:27",
-                "file": "03_Nocturne_03"
+                "name": "Grande Valse brillante en la mineur. Op. 34 n°2",
+                "length": "6:27",
+                "file": "03_Op_34_2_A_minor"
             }, {
                 "track": 4,
-                "name": "Nocturne 4 fa majeur. Opus 15 n°1",
-                "length": "2:59",
-                "file": "04_Nocturne_04"
+                "name": "Grande Valse brillante en fa majeur. Op. 34 n°3",
+                "length": "2:39",
+                "file": "04_Op_34_3_F_major"
             }, {
                 "track": 5,
-                "name": "Nocturne 5 en fa dièse majeur. Opus 15 n°2",
-                "length": "4:38",
-                "file": "05_Nocturnes_05"
+                "name": "Grande Valse nouvelle en la bémol majeur. Op. 42",
+                "length": "4:09",
+                "file": "05_Op_42_Grande_valse_A_flat_major"
             }, {
                 "track": 6,
-                "name": "Nocturne 6 sol mineur. Opus 15 n°3",
-                "length": "2:26",
-                "file": "06_Nocturne_06"
+                "name": "Valse minute en ré bémol majeur. Op. 64 n°1 ",
+                "length": "2:02",
+                "file": "06_Op_64_1_D_flat_major"
             }, {
                 "track": 7,
-                "name": "Nocturne 7 do dièse mineur. Opus 27 n°1",
-                "length": "2:15",
-                "file": "07_Nocturne_07"
+                "name": "Valse en ut dièse mineur. Op. 64 n°2 ",
+                "length": "3:57",
+                "file": "07_Op_64_2_C_sharp_minor"
             }, {
                 "track": 8,
-                "name": "Nocturne 8 en ré bémol majeur. Opus 27 n°2",
-                "length": "3:26",
-                "file": "08_Nocturne_08"
+                "name": "Valse en la bémol majeur. Op. 64 n°3",
+                "length": "3:27",
+                "file": "08_Op_64_3_A_flat_major"
             }, {
                 "track": 9,
-                "name": "Nocturne 9 en si majeur. Opus 32 n°1",
-                "length": "2:58",
-                "file": "09_Nocturne_09"
+                "name": "Valse de l'adieu en la bémol majeur. Op. Posthume 69 n°1",
+                "length": "3:51",
+                "file": "09_Op_Post_69_1_A_flat_major"
             }, {
                 "track": 10,
-                "name": "Nocturne 10 en la bémol majeur. Opus 32 n°2",
-                "length": "2:36",
-                "file": "10_Nocturne_10"
+                "name": "Valse en si mineur. Op. Posthume 69 n°2",
+                "length": "3:38",
+                "file": "10_Op_Post_69_2_B_minor"
             }, {
                 "track": 11,
-                "name": "Nocturne 11 en sol mineur. Opus 37 n°1",
-                "length": "2:41",
-                "file": "11_Nocturne_11"
+                "name": "Valse en sol bémol majeur. Op. Posthume 70",
+                "length": "2:20",
+                "file": "11_Op_Post_70_1_G_flat_major"
             }, {
                 "track": 12,
-                "name": "Nocturne 12 en sol majeur. Opus 37 n°2",
-                "length": "2:46",
-                "file": "12_Nocturne_12"
+                "name": "Valse en fa mineur, dédicacée à Élise Gavard",
+                "length": "1:45",
+                "file": "12_Op_Post_70_2_F_minor"
             }, {
                 "track": 13,
-                "name": "Nocturne 13 en do mineur. Opus 48 n°1",
-                "length": "1:48",
-                "file": "13_Nocturne_13"
+                "name": "Valse en ré bémol majeur",
+                "length": "2:33",
+                "file": "13_Op_Post_70_3_D_flat_major"
             }, {
                 "track": 14,
-                "name": "Nocturne 14 en fa dièse mineur. Opus 48 n°2",
-                "length": "4:15",
-                "file": "14_Nocturne_14"
+                "name": "Valse en mi mineur. Op. posthume",
+                "length": "3:01",
+                "file": "14_KKIVa_14_E_minor"
             }, {
                 "track": 15,
-                "name": "Nocturne 15 en fa mineur. Opus 55 n°1",
-                "length": "2:40",
-                "file": "15_Nocturne_15"
+                "name": "Valse en la bémol majeur. Op. posthume",
+                "length": "1:30",
+                "file": "15_KKIVa_13_A_flat_major"
             }, {
                 "track": 16,
-                "name": "Nocturne 16 en mi bémol majeur. Opus 55 n°2",
-                "length": "3:10",
-                "file": "16_Nocturne_16"
+                "name": "Valse en mi majeur. Op. posthume",
+                "length": "2:26",
+                "file": "16_KKIVa_12_E_major"
             }, {
                 "track": 17,
-                "name": "Nocturne 17 en si majeur. Opus 62 n°1",
-                "length": "4:42",
-                "file": "17_Nocturne_17"
+                "name": "Valse en mi bémol majeur n°1. Op. posthume",
+                "length": "2:00",
+                "file": "17_KKIVa_14_E_flat_major"
             }, {
                 "track": 18,
-                "name": "Nocturne 18 en mi majeur. Opus 62 n°2",
-                "length": "3:36",
-                "file": "18_Nocturne_18"
+                "name": "Valse en mi bémol majeur n°2. Op. posthume",
+                "length": "2:24",
+                "file": "18_KKIVb_10_E_flat_major"
             }, {
                 "track": 19,
-                "name": "Nocturne 19 en mi mineur. Opus 72",
-                "length": "2:38",
-                "file": "19_Nocturne_19"
-            }, {
-                "track": 20,
-                "name": "Nocturne 20 en do dièse mineur. Opus P 1 n°16",
-                "length": "5:09",
-                "file": "20_Nocturne_20"
-            }, {
-                "track": 21,
-                "name": "Nocturne 21 en do mineur P 2 n°8",
-                "length": "2:51",
-                "file": "21_Nocturne_21"
+                "name": "Valse en la mineur. Op. posthume",
+                "length": "1:54",
+                "file": "18_KKIVb_11_a_moll"
             },],
             buildPlaylist = $.each(tracks, function(key, value) {
                 var trackNumber = value.track,

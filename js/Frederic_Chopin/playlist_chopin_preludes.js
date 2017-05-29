@@ -8,113 +8,128 @@ jQuery(function ($) {
     if (supportsAudio) {
         var index = 0,
             playing = false,
-            mediaPath = 'https://archive.org/download/Chopin_Nocturnes/',
+            mediaPath = 'https://archive.org/download/Chopin_Preludes/',
             extension = '',
                         tracks = [{
                 "track": 1,
-                "name": "Nocturne 1 en si bémol mineur. Opus 9 n°1",
-                "length": "1:53",
-                "file": "01_Nocturne_01"
+                "name": "Prélude n°1 en do majeur",
+                "length": "0:38",
+                "file": "01_Preludes_01"
             }, {
                 "track": 2,
-                "name": "Nocturne 2 en mi bémol majeur. Opus 9 n°2",
-                "length": "2:26",
-                "file": "02_Nocturne_02"
+                "name": "Prélude n°2 en la mineur",
+                "length": "2:19",
+                "file": "02_Preludes_02"
             }, {
                 "track": 3,
-                "name": "Nocturne 3 en si majeur. Opus 9 n°3",
-                "length": "4:27",
-                "file": "03_Nocturne_03"
+                "name": "Prélude n°3 en sol majeur",
+                "length": "0:59",
+                "file": "03_Preludes_03"
             }, {
                 "track": 4,
-                "name": "Nocturne 4 fa majeur. Opus 15 n°1",
-                "length": "2:59",
-                "file": "04_Nocturne_04"
+                "name": "Prélude n°4 en mi mineur",
+                "length": "2:03",
+                "file": "04_Preludes_04"
             }, {
                 "track": 5,
-                "name": "Nocturne 5 en fa dièse majeur. Opus 15 n°2",
-                "length": "4:38",
-                "file": "05_Nocturnes_05"
+                "name": "Prélude n°5 en ré majeur",
+                "length": "0:38",
+                "file": "05_Preludes_05"
             }, {
                 "track": 6,
-                "name": "Nocturne 6 sol mineur. Opus 15 n°3",
-                "length": "2:26",
-                "file": "06_Nocturne_06"
+                "name": "Prélude n°6 en si mineur",
+                "length": "1:47",
+                "file": "06_Preludes_06"
             }, {
                 "track": 7,
-                "name": "Nocturne 7 do dièse mineur. Opus 27 n°1",
-                "length": "2:15",
-                "file": "07_Nocturne_07"
+                "name": "Prélude n°7 en la majeur",
+                "length": "0:43",
+                "file": "07_Preludes_07"
             }, {
                 "track": 8,
-                "name": "Nocturne 8 en ré bémol majeur. Opus 27 n°2",
-                "length": "3:26",
-                "file": "08_Nocturne_08"
+                "name": "Prélude n°8 en fa dièse mineur",
+                "length": "1:48",
+                "file": "08_Preludes_08"
             }, {
                 "track": 9,
-                "name": "Nocturne 9 en si majeur. Opus 32 n°1",
-                "length": "2:58",
-                "file": "09_Nocturne_09"
+                "name": "Prélude n°9 en mi majeur",
+                "length": "1:16",
+                "file": "09_Preludes_09"
             }, {
                 "track": 10,
-                "name": "Nocturne 10 en la bémol majeur. Opus 32 n°2",
-                "length": "2:36",
-                "file": "10_Nocturne_10"
+                "name": "Prélude n°10 en do dièse mineur",
+                "length": "0:35",
+                "file": "10_Preludes_10"
             }, {
                 "track": 11,
-                "name": "Nocturne 11 en sol mineur. Opus 37 n°1",
-                "length": "2:41",
-                "file": "11_Nocturne_11"
+                "name": "Prélude n°11 en si majeur",
+                "length": "0:34",
+                "file": "11_Preludes_11"
             }, {
                 "track": 12,
-                "name": "Nocturne 12 en sol majeur. Opus 37 n°2",
-                "length": "2:46",
-                "file": "12_Nocturne_12"
+                "name": "Prélude n°12 en sol dièse mineur",
+                "length": "1:12",
+                "file": "12_Preludes_12"
             }, {
                 "track": 13,
-                "name": "Nocturne 13 en do mineur. Opus 48 n°1",
-                "length": "1:48",
-                "file": "13_Nocturne_13"
+                "name": "Prélude n°13 en fa dièse majeur",
+                "length": "2:38",
+                "file": "13_Preludes_13"
             }, {
                 "track": 14,
-                "name": "Nocturne 14 en fa dièse mineur. Opus 48 n°2",
-                "length": "4:15",
-                "file": "14_Nocturne_14"
+                "name": "Prélude n°14 en mi bémol mineur",
+                "length": "0:31",
+                "file": "14_Preludes_14"
             }, {
                 "track": 15,
-                "name": "Nocturne 15 en fa mineur. Opus 55 n°1",
-                "length": "2:40",
-                "file": "15_Nocturne_15"
+                "name": "ré bémol majeur",
+                "length": "5:00",
+                "file": "15_Preludes_15"
             }, {
                 "track": 16,
-                "name": "Nocturne 16 en mi bémol majeur. Opus 55 n°2",
-                "length": "3:10",
-                "file": "16_Nocturne_16"
+                "name": "si bémol mineur",
+                "length": "1:08",
+                "file": "16_Preludes_16"
             }, {
                 "track": 17,
-                "name": "Nocturne 17 en si majeur. Opus 62 n°1",
-                "length": "4:42",
-                "file": "17_Nocturne_17"
+                "name": "la bémol majeur",
+                "length": "2:49",
+                "file": "17_Preludes_17"
             }, {
                 "track": 18,
-                "name": "Nocturne 18 en mi majeur. Opus 62 n°2",
-                "length": "3:36",
-                "file": "18_Nocturne_18"
+                "name": "Prélude n°18 en fa mineur",
+                "length": "0:52",
+                "file": "18_Preludes_18"
             }, {
                 "track": 19,
-                "name": "Nocturne 19 en mi mineur. Opus 72",
-                "length": "2:38",
-                "file": "19_Nocturne_19"
+                "name": "Prélude n°19 en mi bémol majeur",
+                "length": "1:19",
+                "file": "19_Preludes_19"
             }, {
                 "track": 20,
-                "name": "Nocturne 20 en do dièse mineur. Opus P 1 n°16",
-                "length": "5:09",
-                "file": "20_Nocturne_20"
+                "name": "Prélude n°20 en do mineur",
+                "length": "1:47",
+                "file": "20_Preludes_20"
             }, {
                 "track": 21,
-                "name": "Nocturne 21 en do mineur P 2 n°8",
-                "length": "2:51",
-                "file": "21_Nocturne_21"
+                "name": "Prélude n°21 en si bémol majeur",
+                "length": "1:41",
+                "file": "21_Preludes_21"
+            }, {
+                "track": 22,
+                "name": "Prélude n°22 en sol mineur",
+                "length": "0:45",
+                "file": "22_Preludes_22"
+            }, {
+                "track": 23,
+                "name": "Prélude n°23 en fa majeur",
+                "length": "0:52",
+                "file": "23_Preludes_23"
+            }, {
+                "track": 24,
+                "name": "Prélude n°24 en ré mineur",
+                "length": "2:24",
+                "file": "24_Preludes_24"
             },],
             buildPlaylist = $.each(tracks, function(key, value) {
                 var trackNumber = value.track,

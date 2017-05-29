@@ -1560,14 +1560,14 @@ function display(masque)
 		<!--<td id="first_cell"></td><!--1759-->
 		<td colspan="50"></td><!--1760 - 1809-->
 		<td colspan="7" class="vivant_inactif"></td><!--1810 - 1816-->
-		<td colspan="33" class="compositeur_polonais" OnClick="display('oeuvres_piano_FC'); return false;"><a href="" class="cell_button"><span class="hidden_text"><span>1817</span><span> - </span><span>1849</span></span></a></td><!--1817 - 1849-->
+		<td colspan="33" class="compositeur_polonais" OnClick="display('oeuvres_piano_FC'); display('musique_chambre_FC'); return false;"><a href="" class="cell_button"><span class="hidden_text"><span>1817</span><span> - </span><span>1849</span></span></a></td><!--1817 - 1849-->
 		<td colspan="108"></td><!--1850 - 1957-->
 		<!--<td id="last_cell"></td><!--1958-->
 	</tr>
 	<!--Oeuvres pour piano de Frédéric Chopin-->
 	<tr style="display:none;" id="oeuvres_piano_FC">
 		<td class="nom_compositeur"></td>
-		<td colspan="199" class="categorie_oeuvres" OnClick="display('nocturnes_FC'); return false;"><a href="#">Oeuvres pour piano</a></td>
+		<td colspan="199" class="categorie_oeuvres" OnClick="display('nocturnes_FC'); display('sonate_2_FC'); display('sonate_3_FC'); display('mazurkas_FC'); display('polonaises_FC'); display('valses_FC'); display('preludes_FC'); display('etudes_FC'); display('scherzos_FC'); display('ballades_FC'); return false;"><a href="#">Oeuvres pour piano</a></td>
 	</tr>
 	<!--Nocturnes de Chopin-->
 	<tr style="display:none;" id="nocturnes_FC">
@@ -1578,6 +1578,141 @@ function display(masque)
 	<tr style="display:none;" id="player_nocturnes_FC">
 		<td class="nom_compositeur"></td>
 		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="HTML/Frederic_Chopin/nocturnes.html"></object></td>
+	</tr>
+	<!--Sonate n°2 de Chopin-->
+	<tr style="display:none;" id="sonate_2_FC">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="nom_oeuvre" OnClick="display('player_sonate_2_FC'); return false;"><a href="#">Sonate n°2. Opus 35. "Funèbre"</a></td>
+	</tr>
+	<!--Lecteur de la sonate n°2 de Chopin-->
+	<tr style="display:none;" id="player_sonate_2_FC">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="HTML/Frederic_Chopin/sonate_2.html"></object></td>
+	</tr>
+	<!--Sonate n°3 de Chopin-->
+	<tr style="display:none;" id="sonate_3_FC">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="nom_oeuvre" OnClick="display('player_sonate_3_FC'); return false;"><a href="#">Sonate n°3. Opus 58</a></td>
+	</tr>
+	<!--Lecteur de la sonate n°3 de Chopin-->
+	<tr style="display:none;" id="player_sonate_3_FC">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="HTML/Frederic_Chopin/sonate_3.html"></object></td>
+	</tr>
+	<!--Mazurkas de Chopin-->
+	<tr style="display:none;" id="mazurkas_FC">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="nom_oeuvre" OnClick="display('player_mazurkas_FC'); return false;"><a href="#">Mazurkas</a></td>
+	</tr>
+	<!--Lecteur des mazurkas de Chopin-->
+	<tr style="display:none;" id="player_mazurkas_FC">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="HTML/Frederic_Chopin/mazurkas.html"></object></td>
+	</tr>
+	<!--Polonaises de Chopin-->
+	<tr style="display:none;" id="polonaises_FC">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="nom_oeuvre" OnClick="display('player_polonaises_FC'); return false;"><a href="#">Polonaises</a></td>
+	</tr>
+	<!--Lecteur des polonaises de Chopin-->
+	<tr style="display:none;" id="player_polonaises_FC">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="HTML/Frederic_Chopin/polonaises.html"></object></td>
+	</tr>
+	<!--Valses de Chopin-->
+	<tr style="display:none;" id="valses_FC">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="nom_oeuvre" OnClick="display('player_valses_FC'); return false;"><a href="#">Valses</a></td>
+	</tr>
+	<!--Lecteur des valses de Chopin-->
+	<tr style="display:none;" id="player_valses_FC">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="HTML/Frederic_Chopin/valses.html"></object></td>
+	</tr>
+	<!--Préludes de Chopin-->
+	<tr style="display:none;" id="preludes_FC">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="nom_oeuvre" OnClick="display('player_preludes_FC'); return false;"><a href="#">Préludes</a></td>
+	</tr>
+	<!--Lecteur des préludes de Chopin-->
+	<tr style="display:none;" id="player_preludes_FC">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="HTML/Frederic_Chopin/preludes.html"></object></td>
+	</tr>
+	<!--Études de Chopin-->
+	<tr style="display:none;" id="etudes_FC">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="nom_oeuvre" OnClick="display('player_etudes_FC'); return false;"><a href="#">Études</a></td>
+	</tr>
+	<!--Lecteur des études de Chopin-->
+	<tr style="display:none;" id="player_etudes_FC">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="HTML/Frederic_Chopin/etudes.html"></object></td>
+	</tr>
+	<!--Scherzos de Chopin-->
+	<tr style="display:none;" id="scherzos_FC">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="nom_oeuvre" OnClick="display('player_scherzos_FC'); return false;"><a href="#">Scherzos</a></td>
+	</tr>
+	<!--Lecteur des scherzos de Chopin-->
+	<tr style="display:none;" id="player_scherzos_FC">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="HTML/Frederic_Chopin/scherzos.html"></object></td>
+	</tr>
+	<!--Ballades de Chopin-->
+	<tr style="display:none;" id="ballades_FC">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="nom_oeuvre" OnClick="display('player_ballades_FC'); return false;"><a href="#">Ballades</a></td>
+	</tr>
+	<!--Lecteur des ballades de Chopin-->
+	<tr style="display:none;" id="player_ballades_FC">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="HTML/Frederic_Chopin/ballades.html"></object></td>
+	</tr>
+	<!--Musique de chambre de Frédéric Chopin-->
+	<tr style="display:none;" id="musique_chambre_FC">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="categorie_oeuvres" OnClick="display('concerto_piano_1_FC'); display('concerto_piano_2_FC'); display('trio_FC'); display('sonate_opus_65_FC'); return false;"><a href="#">Musique de chambre</a></td>
+	</tr>
+	<!--Concerto pour piano n°1-->
+	<tr style="display:none;" id="concerto_piano_1_FC">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="nom_oeuvre" OnClick="display('player_concerto_piano_1_FC'); return false;"><a href="#">Concerto pour piano N°1 en mi mineur. Opus 11</a></td>
+	</tr>
+	<!--Lecteur du concerto pour piano n°1-->
+	<tr style="display:none;" id="player_concerto_piano_1_FC">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="HTML/Frederic_Chopin/concerto_piano_1.html"></object></td>
+	</tr>
+	<!--Concerto pour piano n°2-->
+	<tr style="display:none;" id="concerto_piano_2_FC">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="nom_oeuvre" OnClick="display('player_concerto_piano_2_FC'); return false;"><a href="#">Concerto pour piano N°2 en fa mineur. Opus 21</a></td>
+	</tr>
+	<!--Lecteur du concerto pour piano n°2-->
+	<tr style="display:none;" id="player_concerto_piano_2_FC">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="HTML/Frederic_Chopin/concerto_piano_2.html"></object></td>
+	</tr>
+	<!--Trio pour piano, violon et violoncelle-->
+	<tr style="display:none;" id="trio_FC">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="nom_oeuvre" OnClick="display('player_trio_FC'); return false;"><a href="#">Trio pour piano, violon et violoncelle, en sol mineur. Opus 8</a></td>
+	</tr>
+	<!--Lecteur du trio pour piano, violon et violoncelle-->
+	<tr style="display:none;" id="player_trio_FC">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="HTML/Frederic_Chopin/trio.html"></object></td>
+	</tr>
+	<!--Sonate pour piano et violoncelle-->
+	<tr style="display:none;" id="sonate_opus_65_FC">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="nom_oeuvre" OnClick="display('player_sonate_opus_65_FC'); return false;"><a href="#">Sonate pour piano et violoncelle, en sol mineur. Opus 65</a></td>
+	</tr>
+	<!--Lecteur de la sonate pour piano et violoncelle-->
+	<tr style="display:none;" id="player_sonate_opus_65_FC">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="HTML/Frederic_Chopin/sonate_opus_65.html"></object></td>
 	</tr>
 	<!--Compositeurs hongrois-->
 	<tr>

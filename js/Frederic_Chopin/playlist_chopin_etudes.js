@@ -8,113 +8,128 @@ jQuery(function ($) {
     if (supportsAudio) {
         var index = 0,
             playing = false,
-            mediaPath = 'https://archive.org/download/Chopin_Nocturnes/',
+            mediaPath = 'https://archive.org/download/Chopin_Etudes/',
             extension = '',
                         tracks = [{
                 "track": 1,
-                "name": "Nocturne 1 en si bémol mineur. Opus 9 n°1",
+                "name": "Étude n°1 en do majeur. Opus n°10",
                 "length": "1:53",
-                "file": "01_Nocturne_01"
+                "file": "01_Etude_01"
             }, {
                 "track": 2,
-                "name": "Nocturne 2 en mi bémol majeur. Opus 9 n°2",
-                "length": "2:26",
-                "file": "02_Nocturne_02"
+                "name": "Étude n°2 en la mineur. Opus n°10",
+                "length": "1:23",
+                "file": "02_Etude_02"
             }, {
                 "track": 3,
-                "name": "Nocturne 3 en si majeur. Opus 9 n°3",
-                "length": "4:27",
-                "file": "03_Nocturne_03"
+                "name": "Étude n°3 en mi majeur. Opus n°10",
+                "length": "4:46",
+                "file": "03_Etude_03"
             }, {
                 "track": 4,
-                "name": "Nocturne 4 fa majeur. Opus 15 n°1",
-                "length": "2:59",
-                "file": "04_Nocturne_04"
+                "name": "Étude n°4 en do dièse majeur. Opus n°10",
+                "length": "2:00",
+                "file": "04_Etude_04"
             }, {
                 "track": 5,
-                "name": "Nocturne 5 en fa dièse majeur. Opus 15 n°2",
-                "length": "4:38",
-                "file": "05_Nocturnes_05"
+                "name": "Étude n°5 en sol bémol majeur. Opus n°10",
+                "length": "1:42",
+                "file": "05_Etude_05"
             }, {
                 "track": 6,
-                "name": "Nocturne 6 sol mineur. Opus 15 n°3",
-                "length": "2:26",
-                "file": "06_Nocturne_06"
+                "name": "Étude n°6 en mi bémol mineur. Opus n°10",
+                "length": "4:38",
+                "file": "06_Etude_06"
             }, {
                 "track": 7,
-                "name": "Nocturne 7 do dièse mineur. Opus 27 n°1",
-                "length": "2:15",
-                "file": "07_Nocturne_07"
+                "name": "Étude n°7 en do majeur. Opus n°10",
+                "length": "1:29",
+                "file": "07_Etude_07"
             }, {
                 "track": 8,
-                "name": "Nocturne 8 en ré bémol majeur. Opus 27 n°2",
-                "length": "3:26",
-                "file": "08_Nocturne_08"
+                "name": "Étude n°8 en fa majeur. Opus n°10",
+                "length": "2:18",
+                "file": "08_Etude_08"
             }, {
                 "track": 9,
-                "name": "Nocturne 9 en si majeur. Opus 32 n°1",
-                "length": "2:58",
-                "file": "09_Nocturne_09"
+                "name": "Étude n°9 en fa mineur. Opus n°10",
+                "length": "2:41",
+                "file": "09_Etude_09"
             }, {
                 "track": 10,
-                "name": "Nocturne 10 en la bémol majeur. Opus 32 n°2",
-                "length": "2:36",
-                "file": "10_Nocturne_10"
+                "name": "Étude n°10 en la bémol majeur. Opus n°10",
+                "length": "2:16",
+                "file": "10_Etude_10"
             }, {
                 "track": 11,
-                "name": "Nocturne 11 en sol mineur. Opus 37 n°1",
-                "length": "2:41",
-                "file": "11_Nocturne_11"
+                "name": "Étude n°11 en mi bémol majeur. Opus n°10",
+                "length": "2:54",
+                "file": "11_Etude_11"
             }, {
                 "track": 12,
-                "name": "Nocturne 12 en sol majeur. Opus 37 n°2",
+                "name": "Étude n°12 en do mineur. Opus n°10",
                 "length": "2:46",
-                "file": "12_Nocturne_12"
+                "file": "12_Etude_12"
             }, {
                 "track": 13,
-                "name": "Nocturne 13 en do mineur. Opus 48 n°1",
-                "length": "1:48",
-                "file": "13_Nocturne_13"
+                "name": "Étude n°1 en la bémol majeur. Opus n°25",
+                "length": "3:14",
+                "file": "13_Etude_13"
             }, {
                 "track": 14,
-                "name": "Nocturne 14 en fa dièse mineur. Opus 48 n°2",
-                "length": "4:15",
-                "file": "14_Nocturne_14"
+                "name": "Étude n°2 en fa mineur. Opus n°25",
+                "length": "1:38",
+                "file": "14_Etude_14"
             }, {
                 "track": 15,
-                "name": "Nocturne 15 en fa mineur. Opus 55 n°1",
-                "length": "2:40",
-                "file": "15_Nocturne_15"
+                "name": "Étude n°3 en fa majeur. Opus n°25",
+                "length": "1:45",
+                "file": "15_Etude_15"
             }, {
                 "track": 16,
-                "name": "Nocturne 16 en mi bémol majeur. Opus 55 n°2",
-                "length": "3:10",
-                "file": "16_Nocturne_16"
+                "name": "Étude n°4 en la mineur. Opus n°25",
+                "length": "1:32",
+                "file": "16_Etude_16"
             }, {
                 "track": 17,
-                "name": "Nocturne 17 en si majeur. Opus 62 n°1",
-                "length": "4:42",
-                "file": "17_Nocturne_17"
+                "name": "Étude n°5 en mi mineur. Opus n°25",
+                "length": "3:20",
+                "file": "17_Etude_17"
             }, {
                 "track": 18,
-                "name": "Nocturne 18 en mi majeur. Opus 62 n°2",
-                "length": "3:36",
-                "file": "18_Nocturne_18"
+                "name": "Étude n°6 en sol dièse mineur. Opus n°25",
+                "length": "2:00",
+                "file": "18_Etude_18"
             }, {
                 "track": 19,
-                "name": "Nocturne 19 en mi mineur. Opus 72",
-                "length": "2:38",
-                "file": "19_Nocturne_19"
+                "name": "Étude n°7 en do dièse mineur. Opus n°25",
+                "length": "5:46",
+                "file": "19_Etude_19"
             }, {
                 "track": 20,
-                "name": "Nocturne 20 en do dièse mineur. Opus P 1 n°16",
-                "length": "5:09",
-                "file": "20_Nocturne_20"
+                "name": "Étude n°8 en ré bémol majeur. Opus n°25",
+                "length": "1:05",
+                "file": "20_Etude_20"
             }, {
                 "track": 21,
-                "name": "Nocturne 21 en do mineur P 2 n°8",
-                "length": "2:51",
-                "file": "21_Nocturne_21"
+                "name": "Étude n°9 en sol bémol majeur. Opus n°25",
+                "length": "0:59",
+                "file": "21_Etude_21"
+            }, {
+                "track": 22,
+                "name": "Étude n°10 en si mineur. Opus n°25",
+                "length": "4:10",
+                "file": "22_Etude_22"
+            }, {
+                "track": 23,
+                "name": "Étude n°11 en la mineur. Opus n°25",
+                "length": "3:38",
+                "file": "23_Etude_23"
+            }, {
+                "track": 24,
+                "name": "Étude n°12 en do mineur. Opus n°25",
+                "length": "2:38",
+                "file": "24_Etude_24"
             },],
             buildPlaylist = $.each(tracks, function(key, value) {
                 var trackNumber = value.track,
