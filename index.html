@@ -618,7 +618,7 @@ function display(masque)
 		<!--<!--<td id="first_cell"></td><!--1759-->
 		<td colspan="106"></td><!--1760 - 1865-->
 		<td colspan="26" class="vivant_inactif"></td><!--1866 - 1891-->
-		<td colspan="32" class="compositeur_francais" OnClick="display('oeuvres_pour_piano_ES'); display('ballets_ES'); return false;"><a href="" class="cell_button"><span class="hidden_text"><span>1892</span><span> - </span><span>1923</span></span></a></td><!--1892 - 1923-->
+		<td colspan="32" class="compositeur_francais" OnClick="display('oeuvres_pour_piano_ES'); display('ballets_ES'); display('chansons_ES'); return false;"><a href="" class="cell_button"><span class="hidden_text"><span>1892</span><span> - </span><span>1923</span></span></a></td><!--1892 - 1923-->
 		<td colspan="2" class="vivant_inactif"></td><!--1924 - 1925-->
 		<td colspan="32"></td><!--1926 - 1957-->
 		<!--<td id="last_cell"></td><!--1958-->
@@ -626,7 +626,7 @@ function display(masque)
 	<!--Oeuvres pour piano d'Érik Satie-->
 	<tr style="display:none;" id="oeuvres_pour_piano_ES">
 		<td class="nom_compositeur"></td>
-		<td colspan="199" class="categorie_oeuvres" OnClick="display('gymnopedies_ES'); display('gnossiennes_ES'); display('trois_morceaux_en_forme_de_poire_ES'); display('sports_et_divertissements_ES'); display('socrate_ES'); display('je_te_veux_ES'); return false;"><a href="#">Oeuvres pour piano</a></td>
+		<td colspan="199" class="categorie_oeuvres" OnClick="display('gymnopedies_ES'); display('gnossiennes_ES'); display('trois_morceaux_en_forme_de_poire_ES'); display('sports_et_divertissements_ES'); display('socrate_ES'); display('je_te_veux_ES'); display('trois_sarabandes_ES'); return false;"><a href="#">Oeuvres pour piano</a></td>
 	</tr>
 	<!--Gymnopédies-->
 	<tr style="display:none;" id="gymnopedies_ES">
@@ -688,6 +688,16 @@ function display(masque)
 		<td class="nom_compositeur"></td>
 		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="HTML/Erik_Satie/je_te_veux.html"></object></td>
 	</tr>
+	<!--Trois sarabandes d'Érik Satie-->
+	<tr style="display:none;" id="trois_sarabandes_ES">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="nom_oeuvre" OnClick="display('player_trois_sarabandes_ES'); return false;"><a href="#">Trois sarabandes (1887)</a></td>
+	</tr>
+	<!--Lecteur des sarabandes-->
+	<tr style="display:none;" id="player_trois_sarabandes_ES">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="HTML/Erik_Satie/trois_sarabandes.html"></object></td>
+	</tr>
 	<!--Ballets d'Érik Satie-->
 	<tr style="display:none;" id="ballets_ES">
 		<td class="nom_compositeur"></td>
@@ -712,6 +722,41 @@ function display(masque)
 	<tr style="display:none;" id="player_relache_ES">
 		<td class="nom_compositeur"></td>
 		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="HTML/Erik_Satie/relache.html"></object></td>
+	</tr>
+	<!--Chansons d'Érik Satie-->
+	<tr style="display:none;" id="chansons_ES">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="categorie_oeuvres" OnClick="display('elegie_ES'); display('trois_melodies_ES'); display('chanson_ES'); return false;"><a href="#">Chansons</a></td>
+	</tr>
+	<!--Élégie-->
+	<tr style="display:none;" id="elegie_ES">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="nom_oeuvre" OnClick="display('player_elegie_ES'); return false;"><a href="#">Élégie (1887)</a></td>
+	</tr>
+	<!--Lecteur d'élégie-->
+	<tr style="display:none;" id="player_elegie_ES">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="HTML/Erik_Satie/elegie.html"></object></td>
+	</tr>
+	<!--Trois mélodies d'Érik Satie-->
+	<tr style="display:none;" id="trois_melodies_ES">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="nom_oeuvre" OnClick="display('player_trois_melodies_ES'); return false;"><a href="#">Trois mélodies (1887)</a></td>
+	</tr>
+	<!--Lecteur des trois mélodies-->
+	<tr style="display:none;" id="player_trois_melodies_ES">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="HTML/Erik_Satie/trois_melodies.html"></object></td>
+	</tr>
+	<!--Chanson d'Érik Satie-->
+	<tr style="display:none;" id="chanson_ES">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="nom_oeuvre" OnClick="display('player_chanson_ES'); return false;"><a href="#">Chanson, sur un poème de Latour (1887)</a></td>
+	</tr>
+	<!--Lecteur de Chanson-->
+	<tr style="display:none;" id="player_chanson_ES">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="HTML/Erik_Satie/chanson.html"></object></td>
 	</tr>
 	<!--Maurice Ravel-->
 	<tr>
@@ -1567,7 +1612,7 @@ function display(masque)
 	<!--Oeuvres pour piano de Frédéric Chopin-->
 	<tr style="display:none;" id="oeuvres_piano_FC">
 		<td class="nom_compositeur"></td>
-		<td colspan="199" class="categorie_oeuvres" OnClick="display('nocturnes_FC'); display('sonate_2_FC'); display('sonate_3_FC'); display('mazurkas_FC'); display('polonaises_FC'); display('valses_FC'); display('preludes_FC'); display('etudes_FC'); display('scherzos_FC'); display('ballades_FC'); return false;"><a href="#">Oeuvres pour piano</a></td>
+		<td colspan="199" class="categorie_oeuvres" OnClick="display('nocturnes_FC'); display('sonate_2_FC'); display('sonate_3_FC'); display('mazurkas_FC'); display('polonaises_FC'); display('valses_FC'); display('preludes_FC'); display('etudes_FC'); display('scherzos_FC'); display('ballades_FC'); display('berceuse_FC'); display('barcarolle_FC'); display('bolero_FC'); display('fantaisie_FC'); return false;"><a href="#">Oeuvres pour piano</a></td>
 	</tr>
 	<!--Nocturnes de Chopin-->
 	<tr style="display:none;" id="nocturnes_FC">
@@ -1668,6 +1713,46 @@ function display(masque)
 	<tr style="display:none;" id="player_ballades_FC">
 		<td class="nom_compositeur"></td>
 		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="HTML/Frederic_Chopin/ballades.html"></object></td>
+	</tr>
+	<!--Berceuse de Chopin-->
+	<tr style="display:none;" id="berceuse_FC">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="nom_oeuvre" OnClick="display('player_berceuse_FC'); return false;"><a href="#">Berceuse</a></td>
+	</tr>
+	<!--Lecteur de la berceuse de Chopin-->
+	<tr style="display:none;" id="player_berceuse_FC">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="HTML/Frederic_Chopin/berceuse.html"></object></td>
+	</tr>
+	<!--Barcarolle de Chopin-->
+	<tr style="display:none;" id="barcarolle_FC">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="nom_oeuvre" OnClick="display('player_barcarolle_FC'); return false;"><a href="#">Barcarolle</a></td>
+	</tr>
+	<!--Lecteur de la barcarolle de Chopin-->
+	<tr style="display:none;" id="player_barcarolle_FC">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="HTML/Frederic_Chopin/barcarolle.html"></object></td>
+	</tr>
+	<!--Boléro de Chopin-->
+	<tr style="display:none;" id="bolero_FC">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="nom_oeuvre" OnClick="display('player_bolero_FC'); return false;"><a href="#">Boléro</a></td>
+	</tr>
+	<!--Lecteur du boléro de Chopin-->
+	<tr style="display:none;" id="player_bolero_FC">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="HTML/Frederic_Chopin/bolero.html"></object></td>
+	</tr>
+	<!--Fantaisie de Chopin-->
+	<tr style="display:none;" id="fantaisie_FC">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="nom_oeuvre" OnClick="display('player_fantaisie_FC'); return false;"><a href="#">Fantaisie</a></td>
+	</tr>
+	<!--Lecteur de la fantaisie de Chopin-->
+	<tr style="display:none;" id="player_fantaisie_FC">
+		<td class="nom_compositeur"></td>
+		<td colspan="199" class="player_oeuvres_symphoniques"><object type="text/html" data="HTML/Frederic_Chopin/fantaisie.html"></object></td>
 	</tr>
 	<!--Musique de chambre de Frédéric Chopin-->
 	<tr style="display:none;" id="musique_chambre_FC">
