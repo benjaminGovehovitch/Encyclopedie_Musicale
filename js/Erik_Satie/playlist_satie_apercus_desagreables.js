@@ -8,23 +8,23 @@ jQuery(function ($) {
     if (supportsAudio) {
         var index = 0,
             playing = false,
-            mediaPath = 'https://archive.org/download/Satie_Trois_melodies/',
+            mediaPath = 'https://archive.org/download/Satie_Apercus_desagreables/',
             extension = '',
                         tracks = [{
                 "track": 1,
-                "name": "Les anges",
-                "length": "2:14",
-                "file": "01_Les_anges"
+                "name": "Pastorale",
+                "length": "1:23",
+                "file": "01_Pastorale"
 	    },{
                 "track": 2,
-                "name": "Élégie",
-                "length": "2:52",
-                "file": "02_Elegie"
+                "name": "Choral",
+                "length": "1:01",
+                "file": "02_Choral"
 	    },{
-                "track": 3,
-                "name": "Sylvie",
-                "length": "2:43",
-                "file": "03_Sylvie"
+                "track": 1,
+                "name": "Fugue",
+                "length": "2:49",
+                "file": "03_Fugue"
             },],
             buildPlaylist = $.each(tracks, function(key, value) {
                 var trackNumber = value.track,

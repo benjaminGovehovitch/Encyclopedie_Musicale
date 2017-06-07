@@ -8,23 +8,38 @@ jQuery(function ($) {
     if (supportsAudio) {
         var index = 0,
             playing = false,
-            mediaPath = 'https://archive.org/download/Satie_Trois_melodies/',
+            mediaPath = 'https://archive.org/download/Satie_Nocturnes/',
             extension = '',
                         tracks = [{
                 "track": 1,
-                "name": "Les anges",
-                "length": "2:14",
-                "file": "01_Les_anges"
-	    },{
+                "name": "Nocturne n°1",
+                "length": "2:36",
+                "file": "01_Nocturne_n_1"
+            }, {
                 "track": 2,
-                "name": "Élégie",
-                "length": "2:52",
-                "file": "02_Elegie"
-	    },{
+                "name": "Nocturne n°2",
+                "length": "1:58",
+                "file": "02_Nocturne_n_2"
+            }, {
                 "track": 3,
-                "name": "Sylvie",
-                "length": "2:43",
-                "file": "03_Sylvie"
+                "name": "Nocturne n°3",
+                "length": "2:50",
+                "file": "03_Nocturne_n_3"
+            }, {
+                "track": 4,
+                "name": "Nocturne n°4",
+                "length": "2:42",
+                "file": "04_Nocturne_n_4"
+            }, {
+                "track": 5,
+                "name": "Nocturne n°5",
+                "length": "1:59",
+                "file": "05_Nocturne_n_5"
+            }, {
+                "track": 6,
+                "name": "Nocturne n°6",
+                "length": "1:24",
+                "file": "06_Nocturne_n_6"
             },],
             buildPlaylist = $.each(tracks, function(key, value) {
                 var trackNumber = value.track,

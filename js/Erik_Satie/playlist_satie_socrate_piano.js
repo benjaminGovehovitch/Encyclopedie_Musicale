@@ -8,23 +8,23 @@ jQuery(function ($) {
     if (supportsAudio) {
         var index = 0,
             playing = false,
-            mediaPath = 'https://archive.org/download/Satie_Trois_melodies/',
+            mediaPath = 'https://archive.org/download/Satie_Socrate_Piano/',
             extension = '',
                         tracks = [{
                 "track": 1,
-                "name": "Les anges",
-                "length": "2:14",
-                "file": "01_Les_anges"
-	    },{
+                "name": "Portrait de Socrate",
+                "length": "5:45",
+                "file": "01_Portrait_de_Socrate"
+            }, {
                 "track": 2,
-                "name": "Élégie",
-                "length": "2:52",
-                "file": "02_Elegie"
-	    },{
+                "name": "Bords de l'Ilissus",
+                "length": "6:46",
+                "file": "02_Bords_de_l_Ilissus"
+            }, {
                 "track": 3,
-                "name": "Sylvie",
-                "length": "2:43",
-                "file": "03_Sylvie"
+                "name": "Mort de Socrate",
+                "length": "14:37",
+                "file": "03_La_mort_de_Socrate"
             },],
             buildPlaylist = $.each(tracks, function(key, value) {
                 var trackNumber = value.track,

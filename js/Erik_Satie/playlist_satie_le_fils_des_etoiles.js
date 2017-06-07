@@ -8,38 +8,38 @@ jQuery(function ($) {
     if (supportsAudio) {
         var index = 0,
             playing = false,
-            mediaPath = 'https://archive.org/download/Satie_Trois_sarabandes/',
+            mediaPath = 'https://archive.org/download/Satie_Le_fils_des_etoiles/',
             extension = '',
                         tracks = [{
                 "track": 1,
                 "name": "Prélude du 1er acte. La vocation",
-                "length": "3:06",
-                "file": "01_Prelude_du_1er_acte_La_vocation"
+                "length": "3:07",
+                "file": "01_Prelude_du_1er_Acte_La_vocation"
 	    },{
                 "track": 2,
                 "name": "Acte 1",
-                "length": "17:18",
+                "length": "17:21",
                 "file": "02_Acte_1"
 	    },{
                 "track": 3,
                 "name": "Prélude du 2e acte. L'initiation",
-                "length": "2:50",
-                "file": "03_Prelude_du_2e_acte_L_initiation"
+                "length": "2:51",
+                "file": "03_Prelude_du_2e_Acte_L_initation"
 	    },{
                 "track": 4,
                 "name": "Acte 2",
-                "length": "3:55",
+                "length": "14:27",
                 "file": "04_Acte_2"
 	    },{
                 "track": 5,
                 "name": "Prélude du 3e acte. L'incantation",
-                "length": "3:55",
+                "length": "4:48",
                 "file": "05_Prelude_du_3e_Acte_L_incantation"
 	    },{
                 "track": 6,
                 "name": "Prélude du 2e acte. L'initiation",
-                "length": "3:55",
-                "file": "03_Prelude_du_2e_acte_L_initiation"
+                "length": "17:01",
+                "file": "06_Acte_3"
             },],
             buildPlaylist = $.each(tracks, function(key, value) {
                 var trackNumber = value.track,

@@ -8,23 +8,38 @@ jQuery(function ($) {
     if (supportsAudio) {
         var index = 0,
             playing = false,
-            mediaPath = 'https://archive.org/download/Satie_Trois_melodies/',
+            mediaPath = 'https://archive.org/download/Satie_Parade_Piano/',
             extension = '',
                         tracks = [{
                 "track": 1,
-                "name": "Les anges",
-                "length": "2:14",
-                "file": "01_Les_anges"
+                "name": "Prélude du rideau rouge",
+                "length": "1:39",
+                "file": "01_Prelude_du_rideau_rouge"
 	    },{
                 "track": 2,
-                "name": "Élégie",
-                "length": "2:52",
-                "file": "02_Elegie"
+                "name": "Prestidigitateur chinois",
+                "length": "2:19",
+                "file": "02_Prestidigitateur_chinois"
 	    },{
                 "track": 3,
-                "name": "Sylvie",
-                "length": "2:43",
-                "file": "03_Sylvie"
+                "name": "Petite fille américaine",
+                "length": "1:20",
+                "file": "03_Petite_fille_americaine"
+	    },{
+                "track": 4,
+                "name": "Rag-time du paquebot",
+                "length": "2:13",
+                "file": "04_Rag_time_du_paquebot"
+	    },{
+                "track": 5,
+                "name": "Acrobates",
+                "length": "2:52",
+                "file": "05_Acrobates"
+	    },{
+                "track": 7,
+                "name": "Suite au prélude du rideau rouge",
+                "length": "0:33",
+                "file": "06_Suite_au_prelude_du_rideau_rouge"
             },],
             buildPlaylist = $.each(tracks, function(key, value) {
                 var trackNumber = value.track,

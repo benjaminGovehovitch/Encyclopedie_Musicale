@@ -8,23 +8,23 @@ jQuery(function ($) {
     if (supportsAudio) {
         var index = 0,
             playing = false,
-            mediaPath = 'https://archive.org/download/Satie_Trois_melodies/',
+            mediaPath = 'https://archive.org/download/Satie_Veritables_preludes_flasques/',
             extension = '',
                         tracks = [{
                 "track": 1,
-                "name": "Les anges",
-                "length": "2:14",
-                "file": "01_Les_anges"
+                "name": "Sévère réprimande",
+                "length": "0:51",
+                "file": "01_Severe_reprimande"
 	    },{
                 "track": 2,
-                "name": "Élégie",
-                "length": "2:52",
-                "file": "02_Elegie"
+                "name": "Seul à la maison",
+                "length": "1:27",
+                "file": "02_Seul_a_la_maison"
 	    },{
                 "track": 3,
-                "name": "Sylvie",
-                "length": "2:43",
-                "file": "03_Sylvie"
+                "name": "On joue",
+                "length": "0:37",
+                "file": "03_On_joue"
             },],
             buildPlaylist = $.each(tracks, function(key, value) {
                 var trackNumber = value.track,

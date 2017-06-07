@@ -8,23 +8,13 @@ jQuery(function ($) {
     if (supportsAudio) {
         var index = 0,
             playing = false,
-            mediaPath = 'https://archive.org/download/Satie_Trois_melodies/',
+            mediaPath = 'https://archive.org/download/Satie_Le_picadilly/',
             extension = '',
                         tracks = [{
                 "track": 1,
-                "name": "Les anges",
-                "length": "2:14",
-                "file": "01_Les_anges"
-	    },{
-                "track": 2,
-                "name": "Élégie",
-                "length": "2:52",
-                "file": "02_Elegie"
-	    },{
-                "track": 3,
-                "name": "Sylvie",
-                "length": "2:43",
-                "file": "03_Sylvie"
+                "name": "Le piccadilly",
+                "length": "1:35",
+                "file": "01_Le_piccadilly"
             },],
             buildPlaylist = $.each(tracks, function(key, value) {
                 var trackNumber = value.track,

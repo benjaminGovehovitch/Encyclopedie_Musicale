@@ -8,23 +8,23 @@ jQuery(function ($) {
     if (supportsAudio) {
         var index = 0,
             playing = false,
-            mediaPath = 'https://archive.org/download/Satie_Trois_melodies/',
+            mediaPath = 'https://archive.org/download/Satie_Vieux_sequins_et_vieilles_cuirasses/',
             extension = '',
                         tracks = [{
                 "track": 1,
-                "name": "Les anges",
-                "length": "2:14",
-                "file": "01_Les_anges"
+                "name": "Chez le marchand d'or (Venise XIIIe siècle)",
+                "length": "1:49",
+                "file": "01_Chez_le_marchand_d_or"
 	    },{
                 "track": 2,
-                "name": "Élégie",
-                "length": "2:52",
-                "file": "02_Elegie"
+                "name": "Danse cuirassée (Période grecque)",
+                "length": "1:03",
+                "file": "02_Danse_cuirassee"
 	    },{
                 "track": 3,
-                "name": "Sylvie",
-                "length": "2:43",
-                "file": "03_Sylvie"
+                "name": "La défaite des Cimbres (Cauchemar)",
+                "length": "2:00",
+                "file": "03_La_defaite_des_cimbres"
             },],
             buildPlaylist = $.each(tracks, function(key, value) {
                 var trackNumber = value.track,

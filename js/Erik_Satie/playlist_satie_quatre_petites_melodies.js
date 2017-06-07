@@ -8,23 +8,28 @@ jQuery(function ($) {
     if (supportsAudio) {
         var index = 0,
             playing = false,
-            mediaPath = 'https://archive.org/download/Satie_Trois_melodies/',
+            mediaPath = 'https://archive.org/download/Satie_Quatre_petites_melodies/',
             extension = '',
                         tracks = [{
                 "track": 1,
-                "name": "Les anges",
-                "length": "2:14",
-                "file": "01_Les_anges"
-	    },{
-                "track": 2,
                 "name": "Élégie",
-                "length": "2:52",
-                "file": "02_Elegie"
-	    },{
+                "length": "0:58",
+                "file": "01_Elegie"
+            }, {
+                "track": 2,
+                "name": "Danseuse",
+                "length": "0:49",
+                "file": "02_Danseuse"
+            }, {
                 "track": 3,
-                "name": "Sylvie",
-                "length": "2:43",
-                "file": "03_Sylvie"
+                "name": "Chanson",
+                "length": "0:29",
+                "file": "03_Chanson"
+            }, {
+                "track": 4,
+                "name": "Adieu",
+                "length": "0:50",
+                "file": "04_Adieu"
             },],
             buildPlaylist = $.each(tracks, function(key, value) {
                 var trackNumber = value.track,

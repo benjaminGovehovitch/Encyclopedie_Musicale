@@ -8,23 +8,23 @@ jQuery(function ($) {
     if (supportsAudio) {
         var index = 0,
             playing = false,
-            mediaPath = 'https://archive.org/download/Satie_Trois_melodies/',
+            mediaPath = 'https://archive.org/download/Satie_Trois_petites_pieces_montees_Piano/',
             extension = '',
                         tracks = [{
                 "track": 1,
-                "name": "Les anges",
-                "length": "2:14",
-                "file": "01_Les_anges"
-	    },{
+                "name": "De l'enfance de Pantagruel",
+                "length": "1:29",
+                "file": "01_De_l_enfance_de_Pantagruel"
+            }, {
                 "track": 2,
-                "name": "Élégie",
-                "length": "2:52",
-                "file": "02_Elegie"
-	    },{
+                "name": "Marche de Cocagne",
+                "length": "1:13",
+                "file": "02_Marche_de_cocagne"
+            }, {
                 "track": 3,
-                "name": "Sylvie",
-                "length": "2:43",
-                "file": "03_Sylvie"
+                "name": "Jeux de Gargantua",
+                "length": "1:53",
+                "file": "03_Jeux_de_Gargantua"
             },],
             buildPlaylist = $.each(tracks, function(key, value) {
                 var trackNumber = value.track,

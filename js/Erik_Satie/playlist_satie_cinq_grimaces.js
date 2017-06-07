@@ -8,23 +8,33 @@ jQuery(function ($) {
     if (supportsAudio) {
         var index = 0,
             playing = false,
-            mediaPath = 'https://archive.org/download/Satie_Trois_melodies/',
+            mediaPath = 'https://archive.org/download/Satie_Cinq_grimaces/',
             extension = '',
                         tracks = [{
                 "track": 1,
-                "name": "Les anges",
-                "length": "2:14",
-                "file": "01_Les_anges"
+                "name": "Préambule",
+                "length": "0:54",
+                "file": "01_Preambule"
 	    },{
                 "track": 2,
-                "name": "Élégie",
-                "length": "2:52",
-                "file": "02_Elegie"
+                "name": "Coquecigrue",
+                "length": "0:41",
+                "file": "02_Coquecigrue"
 	    },{
                 "track": 3,
-                "name": "Sylvie",
-                "length": "2:43",
-                "file": "03_Sylvie"
+                "name": "Chasse",
+                "length": "0:35",
+                "file": "03_Chasse"
+	    },{
+                "track": 4,
+                "name": "Fanfaronnade",
+                "length": "0:25",
+                "file": "04_Fanfaronnade"
+	    },{
+                "track": 5,
+                "name": "Pour sortir - Retraite",
+                "length": "1:01",
+                "file": "05_Pour_sortie_Retraite"
             },],
             buildPlaylist = $.each(tracks, function(key, value) {
                 var trackNumber = value.track,

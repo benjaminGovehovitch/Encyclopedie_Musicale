@@ -8,23 +8,33 @@ jQuery(function ($) {
     if (supportsAudio) {
         var index = 0,
             playing = false,
-            mediaPath = 'https://archive.org/download/Satie_Trois_melodies/',
+            mediaPath = 'https://archive.org/download/Satie_La_belle_excentrique_Piano_4_mains/',
             extension = '',
                         tracks = [{
                 "track": 1,
-                "name": "Les anges",
-                "length": "2:14",
-                "file": "01_Les_anges"
+                "name": "Marche franco-lunaire",
+                "length": "1:27",
+                "file": "01_Marche_franco_lunaire"
 	    },{
                 "track": 2,
-                "name": "Élégie",
-                "length": "2:52",
-                "file": "02_Elegie"
+                "name": "Grande ritournelle",
+                "length": "1:54",
+                "file": "02_Grande_ritournelle"
 	    },{
                 "track": 3,
-                "name": "Sylvie",
-                "length": "2:43",
-                "file": "03_Sylvie"
+                "name": "Valse du &quot mystérieux baiser dans l'oeil &quot",
+                "length": "2:05",
+                "file": "03_Valse_du_mysterieux_baiser_dans_l_oeil"
+	    },{
+                "track": 4,
+                "name": "Grande ritournelle",
+                "length": "0:55",
+                "file": "04_Grande_ritournelle"
+	    },{
+                "track": 5,
+                "name": "Cancan grand mondain",
+                "length": "1:52",
+                "file": "05_Cancan_grand_mondain"
             },],
             buildPlaylist = $.each(tracks, function(key, value) {
                 var trackNumber = value.track,

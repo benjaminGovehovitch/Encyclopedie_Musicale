@@ -8,23 +8,38 @@ jQuery(function ($) {
     if (supportsAudio) {
         var index = 0,
             playing = false,
-            mediaPath = 'https://archive.org/download/Satie_Trois_melodies/',
+            mediaPath = 'https://archive.org/download/Satie_Pieces_froides/',
             extension = '',
                         tracks = [{
                 "track": 1,
-                "name": "Les anges",
-                "length": "2:14",
-                "file": "01_Les_anges"
+                "name": "I - Airs à faire fuir - D'une manière très particulière",
+                "length": "3:42",
+                "file": "01_Airs_a_faire_fuir_01_D_une_maniere_tres_particuliere"
 	    },{
                 "track": 2,
-                "name": "Élégie",
-                "length": "2:52",
-                "file": "02_Elegie"
+                "name": "I - Airs à faire fuir - Modestement",
+                "length": "1:52",
+                "file": "01_Airs_a_faire_fuir_02_ Modestement"
 	    },{
                 "track": 3,
-                "name": "Sylvie",
-                "length": "2:43",
-                "file": "03_Sylvie"
+                "name": "I - Airs à faire fuir - S'inviter",
+                "length": "3:49",
+                "file": "01_Airs_a_faire_fuir_03_S_inviter"
+	    },{
+                "track": 4,
+                "name": "II - Danses de travers - En y regardant à deux fois",
+                "length": "1:44",
+                "file": "02_Danses_de_travers_01_En_y_regardant_a_deux_fois"
+	    },{
+                "track": 5,
+                "name": "II - Danses de travers - Passer",
+                "length": "1:28",
+                "file": "02_Danses_de_travers_02_Passer"
+	    },{
+                "track": 6,
+                "name": "II - Danses de travers - Encore",
+                "length": "2:25",
+                "file": "02_Danses_de_travers_03_Encore"
             },],
             buildPlaylist = $.each(tracks, function(key, value) {
                 var trackNumber = value.track,

@@ -8,23 +8,48 @@ jQuery(function ($) {
     if (supportsAudio) {
         var index = 0,
             playing = false,
-            mediaPath = 'https://archive.org/download/Satie_Trois_melodies/',
+            mediaPath = 'https://archive.org/download/Satie_Parade_Orchestre/',
             extension = '',
                         tracks = [{
                 "track": 1,
-                "name": "Les anges",
-                "length": "2:14",
-                "file": "01_Les_anges"
+                "name": "Choral",
+                "length": "1:04",
+                "file": "01_Choral"
 	    },{
                 "track": 2,
-                "name": "Élégie",
-                "length": "2:52",
-                "file": "02_Elegie"
+                "name": "Prélude du rideau rouge",
+                "length": "0:50",
+                "file": "02_Prelude_du_rideau_rouge"
 	    },{
                 "track": 3,
-                "name": "Sylvie",
-                "length": "2:43",
-                "file": "03_Sylvie"
+                "name": "Prestidigitateur chinois",
+                "length": "3:43",
+                "file": "03_Prestidigitateur_chinois"
+	    },{
+                "track": 4,
+                "name": "Petite fille américaine",
+                "length": "1:30",
+                "file": "04_Petite_fille_americaine"
+	    },{
+                "track": 5,
+                "name": "Rag-time du paquebot",
+                "length": "2:13",
+                "file": "05_Rag_time_du_paquebot"
+	    },{
+                "track": 6,
+                "name": "Acrobates",
+                "length": "3:33",
+                "file": "06_Acrobates"
+	    },{
+                "track": 7,
+                "name": "Final",
+                "length": "2:10",
+                "file": "07_Final"
+	    },{
+                "track": 8,
+                "name": "Suite au prélude du rideau rouge",
+                "length": "0:33",
+                "file": "08_Suite_au_prelude_du_rideau_rouge"
             },],
             buildPlaylist = $.each(tracks, function(key, value) {
                 var trackNumber = value.track,

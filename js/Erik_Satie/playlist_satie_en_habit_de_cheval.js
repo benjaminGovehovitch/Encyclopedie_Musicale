@@ -8,23 +8,28 @@ jQuery(function ($) {
     if (supportsAudio) {
         var index = 0,
             playing = false,
-            mediaPath = 'https://archive.org/download/Satie_Trois_melodies/',
+            mediaPath = 'https://archive.org/download/Satie_En_habit_de_cheval/',
             extension = '',
                         tracks = [{
                 "track": 1,
-                "name": "Les anges",
-                "length": "2:14",
-                "file": "01_Les_anges"
+                "name": "Choral",
+                "length": "0:43",
+                "file": "01_Choral"
 	    },{
                 "track": 2,
-                "name": "Élégie",
-                "length": "2:52",
-                "file": "02_Elegie"
+                "name": "Fugue litanique",
+                "length": "2:06",
+                "file": "02_Fugue_litanique"
 	    },{
                 "track": 3,
-                "name": "Sylvie",
-                "length": "2:43",
-                "file": "03_Sylvie"
+                "name": "Autre choral",
+                "length": "0:40",
+                "file": "03_Autre_choral"
+	    },{
+                "track": 4,
+                "name": "Fugue de papier",
+                "length": "2:20",
+                "file": "04_Fugue_de_papier"
             },],
             buildPlaylist = $.each(tracks, function(key, value) {
                 var trackNumber = value.track,

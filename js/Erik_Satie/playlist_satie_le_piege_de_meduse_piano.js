@@ -8,23 +8,43 @@ jQuery(function ($) {
     if (supportsAudio) {
         var index = 0,
             playing = false,
-            mediaPath = 'https://archive.org/download/Satie_Trois_melodies/',
+            mediaPath = 'https://archive.org/download/Satie_Le_piege_de_Meduse_Piano/',
             extension = '',
                         tracks = [{
                 "track": 1,
-                "name": "Les anges",
-                "length": "2:14",
-                "file": "01_Les_anges"
+                "name": "Quadrille",
+                "length": "0:33",
+                "file": "01_Quadrille"
 	    },{
                 "track": 2,
-                "name": "Élégie",
-                "length": "2:52",
-                "file": "02_Elegie"
+                "name": "Valse",
+                "length": "0:37",
+                "file": "02_Valse"
 	    },{
                 "track": 3,
-                "name": "Sylvie",
-                "length": "2:43",
-                "file": "03_Sylvie"
+                "name": "Pas vif",
+                "length": "0:38",
+                "file": "03_Danse"
+	    },{
+                "track": 4,
+                "name": "Mazurka",
+                "length": "0:25",
+                "file": "04_Mazurka"
+	    },{
+                "track": 5,
+                "name": "Un peu vif",
+                "length": "0:16",
+                "file": "05_Danse"
+	    },{
+                "track": 6,
+                "name": "Polka",
+                "length": "0:28",
+                "file": "06_Polka"
+	    },{
+                "track": 7,
+                "name": "Quadrille",
+                "length": "0:21",
+                "file": "07_Quadrille"
             },],
             buildPlaylist = $.each(tracks, function(key, value) {
                 var trackNumber = value.track,

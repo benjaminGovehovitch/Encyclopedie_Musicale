@@ -8,23 +8,28 @@ jQuery(function ($) {
     if (supportsAudio) {
         var index = 0,
             playing = false,
-            mediaPath = 'https://archive.org/download/Satie_Trois_melodies/',
+            mediaPath = 'https://archive.org/download/Satie_Quatre_preludes/',
             extension = '',
                         tracks = [{
                 "track": 1,
-                "name": "Les anges",
-                "length": "2:14",
-                "file": "01_Les_anges"
+                "name": "Fête donnée par des chevaliers normands en l'honneur d'une demoiselle",
+                "length": "3:57",
+                "file": "01_Fete_donnee_par_des_chevaliers_normands_en_l_honneur_d_une_demoiselle"
 	    },{
                 "track": 2,
-                "name": "Élégie",
-                "length": "2:52",
-                "file": "02_Elegie"
+                "name": "Prélude d'Enginhard",
+                "length": "2:54",
+                "file": "02_Prelude_d_Enginhard"
 	    },{
                 "track": 3,
-                "name": "Sylvie",
-                "length": "2:43",
-                "file": "03_Sylvie"
+                "name": "Premier prélude du Nazaréen",
+                "length": "7:56",
+                "file": "03_Premier_prelude_du_Nazareen"
+	    },{
+                "track": 4,
+                "name": "Second prélude du Nazaréen",
+                "length": "4:38",
+                "file": "04_Second_prelude_du_Nazareen"
             },],
             buildPlaylist = $.each(tracks, function(key, value) {
                 var trackNumber = value.track,

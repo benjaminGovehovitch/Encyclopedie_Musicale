@@ -8,23 +8,33 @@ jQuery(function ($) {
     if (supportsAudio) {
         var index = 0,
             playing = false,
-            mediaPath = 'https://archive.org/download/Satie_Trois_melodies/',
+            mediaPath = 'https://archive.org/download/Satie_Ludions/',
             extension = '',
                         tracks = [{
                 "track": 1,
-                "name": "Les anges",
-                "length": "2:14",
-                "file": "01_Les_anges"
-	    },{
+                "name": "Air du rat",
+                "length": "0:41",
+                "file": "01_Air_du_rat"
+            }, {
                 "track": 2,
-                "name": "Élégie",
-                "length": "2:52",
-                "file": "02_Elegie"
-	    },{
+                "name": "Spleen",
+                "length": "0:47",
+                "file": "02_Spleen"
+            }, {
                 "track": 3,
-                "name": "Sylvie",
-                "length": "2:43",
-                "file": "03_Sylvie"
+                "name": "La grenouille américaine",
+                "length": "1:06",
+                "file": "03_La_grenouille_americaine"
+            }, {
+                "track": 4,
+                "name": "Air du poète",
+                "length": "1:02",
+                "file": "04_Air_du_poete"
+            }, {
+                "track": 5,
+                "name": "Chanson du chat",
+                "length": "0:47",
+                "file": "05_Chanson_du_chat"
             },],
             buildPlaylist = $.each(tracks, function(key, value) {
                 var trackNumber = value.track,

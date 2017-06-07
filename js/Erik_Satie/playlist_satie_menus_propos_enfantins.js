@@ -8,23 +8,23 @@ jQuery(function ($) {
     if (supportsAudio) {
         var index = 0,
             playing = false,
-            mediaPath = 'https://archive.org/download/Satie_Trois_melodies/',
+            mediaPath = 'https://archive.org/download/Satie_Menus_propos_enfantins/',
             extension = '',
                         tracks = [{
                 "track": 1,
-                "name": "Les anges",
-                "length": "2:14",
-                "file": "01_Les_anges"
+                "name": "Le chant guerrier du roi des haricots",
+                "length": "1:07",
+                "file": "01_Le_chant_guerrier_du_roi_des_haricots"
 	    },{
                 "track": 2,
-                "name": "Élégie",
-                "length": "2:52",
-                "file": "02_Elegie"
+                "name": "Ce que dit la petite princesse des tulipes",
+                "length": "0:43",
+                "file": "02_Ce_que_dit_la_petite_princesse_des_tulipes"
 	    },{
                 "track": 3,
-                "name": "Sylvie",
-                "length": "2:43",
-                "file": "03_Sylvie"
+                "name": "Valse du chocolat aux amandes",
+                "length": "1:00	",
+                "file": "03_Valse_du_chocolat_aux_amandes"
             },],
             buildPlaylist = $.each(tracks, function(key, value) {
                 var trackNumber = value.track,
